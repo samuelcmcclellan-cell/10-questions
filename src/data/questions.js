@@ -19,30 +19,28 @@ export const QUESTIONS_DATA = [
     label: "QUESTION 02",
     question: "What do higher oil prices mean for inflation and the Fed?",
     bullets: [
-      "<strong>Energy is about to reignite headline inflation:</strong> February CPI came in at 2.4% YoY, but that was before the oil shock. Gasoline prices have surged 25%+ since early March, and the March CPI print (due April 10) is expected to jump above 3%.",
-      "<strong>Core inflation was already sticky:</strong> Core CPI ran at 2.5% in February with shelter at 3.0% YoY. Adding an oil shock on top risks re-anchoring inflation expectations higher, especially as 5-year breakevens push toward 2.6%.",
-      "<strong>The Fed is stuck in wait-and-see mode:</strong> The FOMC held at 3.50–3.75% on March 18, with the dot plot projecting just one cut this year. Goldman has pushed its first cut call to September, citing oil-driven inflation uncertainty.",
-      "<strong>The growth-inflation trade-off is the worst since 2022:</strong> Higher oil acts as both a tax on consumers and an inflation accelerant. The Fed can't ease into an inflation spike, creating stagflationary risk for the first time this cycle."
+      "<strong>Oil is just the start — it ripples through everything:</strong> Crude is up ~50% YTD, but the inflationary transmission goes far beyond gasoline. Oil feeds into fertilizers, plastics, freight, and chemicals — raising costs across food, manufacturing, and consumer goods with a 3–6 month lag.",
+      "<strong>Commodities are spiking in tandem:</strong> Aluminum hit a 4-year high as 20% of global smelting capacity is in the Middle East. Qatar's Ras Laffan damage has taken one-third of global helium offline, threatening semiconductor and MRI supply chains. Food prices rose 3.1% YoY in February — before the oil shock hit.",
+      "<strong>February CPI was 2.4% — but March will be sharply higher:</strong> The February print was tame (0.3% MoM, 2.4% YoY), but it captured none of the March oil spike. Energy services were already running +6.3% YoY and natural gas +10.9%. The March report (April 10) is expected above 3%.",
+      "<strong>The Fed can't cut into a commodity supply shock:</strong> The FOMC held at 3.50–3.75% and is trapped — oil acts as both a growth drag and inflation accelerant. Goldman pushed its first rate cut call to September. The risk of zero cuts in 2026 is rising."
     ],
-    chartType: "composed",
+    chartType: "horizontal-bar",
     chartData: [
-      { month: "Mar 25", wti: 69, cpi: 2.4 },
-      { month: "May 25", wti: 62, cpi: 2.3 },
-      { month: "Jul 25", wti: 68, cpi: 2.5 },
-      { month: "Sep 25", wti: 66, cpi: 2.4 },
-      { month: "Nov 25", wti: 70, cpi: 2.3 },
-      { month: "Jan 26", wti: 74, cpi: 2.4 },
-      { month: "Feb 26", wti: 78, cpi: 2.4 },
-      { month: "Mar 26", wti: 95, cpi: 3.1 }
+      { name: "Brent Crude", value: 62, fill: "#FF5252" },
+      { name: "WTI Crude", value: 50, fill: "#FF5252" },
+      { name: "Natural Gas (EU)", value: 35, fill: "#FF7043" },
+      { name: "Aluminum", value: 22, fill: "#FF7043" },
+      { name: "Wheat", value: 15, fill: "#FFB300" },
+      { name: "Food CPI (YoY)", value: 3.1, fill: "#FFB300" },
+      { name: "Gasoline", value: -5.6, fill: "#00C853" },
+      { name: "U.S. Nat. Gas", value: -8, fill: "#00C853" }
     ],
     chartConfig: {
-      xKey: "month",
-      lines: [
-        { dataKey: "wti", name: "WTI Crude ($/bbl)", stroke: "#FFB300", yAxisId: "left" },
-        { dataKey: "cpi", name: "CPI YoY (%)", stroke: "#FF5252", yAxisId: "right" }
-      ]
+      xKey: "value",
+      yKey: "name",
+      layout: "vertical"
     },
-    source: "Source: BLS, EIA, as of March 2026. March CPI is estimated."
+    source: "Source: BLS, EIA, Bloomberg, CNN Business, as of March 27, 2026. Gasoline/US Nat Gas are pre-shock Feb figures."
   },
   {
     id: 3,

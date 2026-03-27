@@ -5,25 +5,6 @@ import 'leaflet/dist/leaflet.css';
 const STRAIT_CENTER = [26.35, 56.25];
 const ZOOM = 7;
 
-// Shipping lane coordinates (approximate real shipping lane through the strait)
-const INBOUND_LANE = [
-  [25.20, 57.20],
-  [25.60, 56.80],
-  [26.00, 56.50],
-  [26.30, 56.30],
-  [26.50, 56.10],
-  [26.80, 55.60],
-];
-
-const OUTBOUND_LANE = [
-  [26.90, 55.40],
-  [26.60, 55.90],
-  [26.35, 56.15],
-  [26.05, 56.35],
-  [25.65, 56.65],
-  [25.30, 57.05],
-];
-
 // Key locations
 const LOCATIONS = [
   { pos: [27.19, 56.27], name: 'Bandar Abbas', type: 'port' },
@@ -33,17 +14,6 @@ const LOCATIONS = [
   { pos: [26.56, 56.26], name: 'Qeshm Island', type: 'island' },
   { pos: [27.08, 56.46], name: 'Hormuz Is.', type: 'island' },
   { pos: [26.52, 56.08], name: 'Musandam', type: 'region' },
-];
-
-// Blockade zone (approximate area of the strait narrows)
-const BLOCKADE_ZONE = [
-  [26.70, 56.50],
-  [26.20, 56.70],
-  [25.80, 56.50],
-  [26.00, 56.10],
-  [26.40, 56.00],
-  [26.70, 56.20],
-  [26.70, 56.50],
 ];
 
 export default function StraitOfHormuzMap() {
@@ -72,20 +42,11 @@ export default function StraitOfHormuzMap() {
       maxZoom: 19,
     }).addTo(map);
 
-    // Country labels layer (separate so labels show on top)
+    // Country labels layer
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png', {
       subdomains: 'abcd',
       maxZoom: 19,
       pane: 'shadowPane',
-    }).addTo(map);
-
-    // Blockade zone
-    L.polygon(BLOCKADE_ZONE, {
-      color: '#FF5252',
-      fillColor: '#FF5252',
-      fillOpacity: 0.12,
-      weight: 1.5,
-      dashArray: '6, 4',
     }).addTo(map);
 
     // Strait label
@@ -105,21 +66,6 @@ export default function StraitOfHormuzMap() {
       iconAnchor: [80, 10],
     });
     L.marker([26.20, 56.35], { icon: straitLabel, interactive: false }).addTo(map);
-
-    // Shipping lanes
-    L.polyline(INBOUND_LANE, {
-      color: '#00C853',
-      weight: 2,
-      dashArray: '8, 6',
-      opacity: 0.7,
-    }).addTo(map);
-
-    L.polyline(OUTBOUND_LANE, {
-      color: '#FF7043',
-      weight: 2,
-      dashArray: '8, 6',
-      opacity: 0.7,
-    }).addTo(map);
 
     // Location markers
     LOCATIONS.forEach(loc => {
@@ -206,10 +152,6 @@ export default function StraitOfHormuzMap() {
           </div>
           <div style="color:#78909C; font-size:10px;">
             21% of global oil supply at risk
-          </div>
-          <div style="margin-top:8px; display:flex; gap:12px; font-size:9px;">
-            <span style="color:#00C853;">● Inbound lane</span>
-            <span style="color:#FF7043;">● Outbound lane</span>
           </div>
         </div>
       `;
