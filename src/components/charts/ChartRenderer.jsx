@@ -151,8 +151,8 @@ function renderComposedChart(data, config) {
       <ComposedChart data={data} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
         <CartesianGrid {...commonGridProps} />
         <XAxis dataKey={config.xKey} {...commonAxisProps} />
-        <YAxis yAxisId="left" {...commonAxisProps} />
-        {hasMultipleAxes && <YAxis yAxisId="right" orientation="right" {...commonAxisProps} />}
+        <YAxis yAxisId="left" {...commonAxisProps} domain={['auto', 'auto']} />
+        {hasMultipleAxes && <YAxis yAxisId="right" orientation="right" {...commonAxisProps} domain={['auto', 'auto']} />}
         <Tooltip content={<CustomTooltip />} />
         <Legend wrapperStyle={{ color: '#B0BEC5', fontSize: 12 }} />
         {lines.map((line, i) => (

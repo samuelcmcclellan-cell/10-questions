@@ -22,7 +22,7 @@ export default function ClosingSlide({ onRestart }) {
         </h2>
 
         <p className="text-text-secondary text-lg md:text-xl leading-relaxed mb-10 max-w-lg mx-auto">
-          Markets reward patience and discipline. Reach out to your BlackRock representative for personalized portfolio positioning.
+          Markets reward patience and discipline. Review the data, stress-test your assumptions, and position accordingly.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -39,7 +39,7 @@ export default function ClosingSlide({ onRestart }) {
 
         <div className="mt-16 space-y-2">
           <p className="text-text-muted text-xs tracking-wider">
-            iSHARES ® BY BLACKROCK
+            10 QUESTIONS — SPRING 2026
           </p>
           <p className="text-text-muted text-[10px] leading-relaxed max-w-md mx-auto">
             This material is for informational purposes only and does not constitute investment advice.

@@ -48,7 +48,7 @@ export default function TitleSlide({ onStart }) {
 
         {/* Attribution */}
         <p className="text-text-muted text-xs mt-16 tracking-wider">
-          iSHARES ® BY BLACKROCK
+          A DATA-DRIVEN MARKET BRIEFING
         </p>
       </div>
     </div>

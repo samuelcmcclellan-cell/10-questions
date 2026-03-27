@@ -1,6 +1,9 @@
 import ChartRenderer from './charts/ChartRenderer';
+import StraitOfHormuzMap from './StraitOfHormuzMap';
 
 export default function QuestionSlide({ data, currentIndex, total, isVisible }) {
+  const isMap = data.chartType === 'map';
+
   return (
     <div className="w-full h-full flex flex-col px-6 md:px-12 lg:px-20 py-4 md:py-6 pb-12 md:pb-14">
       {/* Question header */}
@@ -13,17 +16,21 @@ export default function QuestionSlide({ data, currentIndex, total, isVisible }) 
         </h2>
       </div>
 
-      {/* Content area: chart + bullets */}
+      {/* Content area: chart/map + bullets */}
       <div className="flex-1 flex flex-col md:flex-row gap-4 md:gap-6 min-h-0 overflow-hidden">
-        {/* Chart */}
+        {/* Chart or Map */}
         <div className="w-full md:w-[58%] min-h-0 flex-1 md:flex-initial md:h-full">
           <div className="h-full min-h-[200px] max-h-[300px] md:max-h-full">
-            <ChartRenderer
-              chartType={data.chartType}
-              chartData={data.chartData}
-              chartConfig={data.chartConfig}
-              isVisible={isVisible}
-            />
+            {isMap ? (
+              <StraitOfHormuzMap />
+            ) : (
+              <ChartRenderer
+                chartType={data.chartType}
+                chartData={data.chartData}
+                chartConfig={data.chartConfig}
+                isVisible={isVisible}
+              />
+            )}
           </div>
         </div>
 
