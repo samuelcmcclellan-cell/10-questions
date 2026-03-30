@@ -3,12 +3,16 @@ import TitleSlide from './components/TitleSlide';
 import QuestionSlide from './components/QuestionSlide';
 import ClosingSlide from './components/ClosingSlide';
 import Navigation from './components/Navigation';
+import PasswordGate from './components/PasswordGate';
 import { QUESTIONS_DATA } from './data/questions';
 
 // Total slides: title (0) + 10 questions (1-10) + closing (11)
 const TOTAL_SLIDES = QUESTIONS_DATA.length + 2;
 
 export default function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(
+    () => sessionStorage.getItem('authenticated') === 'true'
+  );
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -58,6 +62,14 @@ export default function App() {
       />
     );
   };
+
+  if (!isAuthenticated) {
+    return (
+      <div className="w-full h-screen bg-navy">
+        <PasswordGate onAuthenticated={() => setIsAuthenticated(true)} />
+      </div>
+    );
+  }
 
   return (
     <div className="w-full h-screen bg-navy overflow-hidden relative">

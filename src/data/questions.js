@@ -1,296 +1,209 @@
+export const SECTIONS = {
+  macro: { label: "MACRO", color: "#FF7043" },
+  usEquities: { label: "US EQUITIES", color: "#00C853" },
+  intlEquities: { label: "INTERNATIONAL EQUITIES", color: "#00BFA5" },
+  fixedIncome: { label: "FIXED INCOME", color: "#FFB300" },
+  portfolio: { label: "PORTFOLIO & POSITIONING", color: "#BB86FC" },
+};
+
 export const QUESTIONS_DATA = [
+  // ── MACRO (4) ──────────────────────────────────────────────
   {
     id: 1,
+    section: "macro",
     label: "QUESTION 01",
-    question: "How does the Iran war impact the economy?",
+    question: "How does the Iran war impact the US economy?",
+    subtitle: "Inflation re-acceleration, Fed on hold, and the growth-shock transmission",
     bullets: [
-      "<strong>Oil supply shock is the largest since the 1970s:</strong> Iran's closure of the Strait of Hormuz has taken ~10 million barrels/day offline — 21% of global supply. Brent surged to $126/bbl at peak before settling near $108–113, with WTI at ~$95–100.",
-      "<strong>Inflation is the key transmission channel:</strong> Sustained $90+ oil will likely push headline CPI from 2.4% in February back toward 3.0–3.5% by mid-year, reversing 18 months of disinflation progress and complicating the Fed's rate-cut path.",
-      "<strong>Growth slowdown risk is rising:</strong> Every $10/bbl sustained increase in oil historically shaves 0.1–0.2% off GDP. Combined with tariff headwinds, the Atlanta Fed GDPNow tracker has already moved to sub-2% for Q2.",
-      "<strong>Portfolio implication — position for stagflationary risk:</strong> We favor energy infrastructure, TIPS, and commodity baskets. Duration risk is elevated as the oil-inflation feedback loop delays the easing cycle."
+      "<strong>Oil supply shock is the largest since the 1970s:</strong> Iran's closure of the Strait of Hormuz has taken ~10 million barrels/day offline — 21% of global supply. Brent surged to $126/bbl at peak before settling near $108–113.",
+      "<strong>Inflation is the key transmission channel:</strong> Sustained $90+ oil will likely push headline CPI from 2.4% back toward 3.0–3.5% by mid-year, reversing 18 months of disinflation and complicating the Fed's rate-cut path.",
+      "<strong>Growth slowdown risk is rising:</strong> Every $10/bbl sustained increase in oil historically shaves 0.1–0.2% off GDP. Combined with tariff headwinds, GDPNow has moved to sub-2% for Q2.",
+      "<strong>Position for stagflationary risk:</strong> We favor energy infrastructure, TIPS, and commodity baskets. Duration risk is elevated as the oil-inflation feedback loop delays the easing cycle."
     ],
-    chartType: "map",
-    chartData: [],
-    chartConfig: {},
-    source: "Source: EIA, Kpler, Dallas Fed, as of March 27, 2026"
+    placeholderChart: {
+      type: "timeline",
+      title: "Oil Shock Episodes & GDP Impact",
+      description: "Historical comparison of oil supply disruptions and their effect on US GDP growth"
+    },
+    source: "Source: EIA, Kpler, Dallas Fed, as of March 2026"
   },
   {
     id: 2,
+    section: "macro",
     label: "QUESTION 02",
     question: "What do higher oil prices mean for inflation and the Fed?",
+    subtitle: "Commodity pass-through, CPI trajectory, and why the Fed is trapped",
     bullets: [
-      "<strong>Oil is just the start — it ripples through everything:</strong> Crude is up ~50% YTD, but the inflationary transmission goes far beyond gasoline. Oil feeds into fertilizers, plastics, freight, and chemicals — raising costs across food, manufacturing, and consumer goods with a 3–6 month lag.",
-      "<strong>Commodities are spiking in tandem:</strong> Aluminum hit a 4-year high as 20% of global smelting capacity is in the Middle East. Qatar's Ras Laffan damage has taken one-third of global helium offline, threatening semiconductor and MRI supply chains. Food prices rose 3.1% YoY in February — before the oil shock hit.",
-      "<strong>February CPI was 2.4% — but March will be sharply higher:</strong> The February print was tame (0.3% MoM, 2.4% YoY), but it captured none of the March oil spike. Energy services were already running +6.3% YoY and natural gas +10.9%. The March report (April 10) is expected above 3%.",
-      "<strong>The Fed can't cut into a commodity supply shock:</strong> The FOMC held at 3.50–3.75% and is trapped — oil acts as both a growth drag and inflation accelerant. Goldman pushed its first rate cut call to September. The risk of zero cuts in 2026 is rising."
+      "<strong>Oil ripples through everything:</strong> Crude is up ~50% YTD, but the inflationary transmission goes beyond gasoline — into fertilizers, plastics, freight, and chemicals — with a 3–6 month lag.",
+      "<strong>February CPI was 2.4% — but March will be sharply higher:</strong> Energy services were already +6.3% YoY and natural gas +10.9%. The March print is expected above 3%.",
+      "<strong>Commodities are spiking in tandem:</strong> Aluminum at a 4-year high, one-third of global helium offline, food prices +3.1% YoY before the shock hit.",
+      "<strong>The Fed can't cut into a supply shock:</strong> The FOMC held at 3.50–3.75% and is trapped — oil acts as both a growth drag and inflation accelerant. The risk of zero cuts in 2026 is rising."
     ],
-    chartType: "horizontal-bar",
-    chartData: [
-      { name: "Brent Crude", value: 62, fill: "#FF5252" },
-      { name: "WTI Crude", value: 50, fill: "#FF5252" },
-      { name: "Natural Gas (EU)", value: 35, fill: "#FF7043" },
-      { name: "Aluminum", value: 22, fill: "#FF7043" },
-      { name: "Wheat", value: 15, fill: "#FFB300" },
-      { name: "Food CPI (YoY)", value: 3.1, fill: "#FFB300" },
-      { name: "Gasoline", value: -5.6, fill: "#00C853" },
-      { name: "U.S. Nat. Gas", value: -8, fill: "#00C853" }
-    ],
-    chartConfig: {
-      xKey: "value",
-      yKey: "name",
-      layout: "vertical"
+    placeholderChart: {
+      type: "dual-axis-line",
+      title: "Oil Price vs. CPI (YoY)",
+      description: "WTI crude price overlaid with headline CPI, showing the pass-through lag"
     },
-    source: "Source: BLS, EIA, Bloomberg, CNN Business, as of March 27, 2026. Gasoline/US Nat Gas are pre-shock Feb figures."
+    source: "Source: BLS, EIA, Bloomberg, as of March 2026"
   },
   {
     id: 3,
+    section: "macro",
     label: "QUESTION 03",
-    question: "What will the next Fed move be?",
+    question: "Is AI leading to higher unemployment?",
+    subtitle: "Labor market disruption, job displacement vs. creation, and the productivity paradox",
     bullets: [
-      "<strong>The Fed held at 3.50–3.75% in March:</strong> The FOMC voted 11-1 to hold, acknowledging that \"economic activity has been expanding at a solid pace\" but inflation \"remains somewhat elevated\" — coded language for caution.",
-      "<strong>The dot plot shows deep division:</strong> Of 19 participants, 7 see rates unchanged for all of 2026. The median still projects one 25bp cut, but the Iran conflict has pushed rate cut expectations further out.",
-      "<strong>Markets have dramatically repriced:</strong> At the start of 2026, markets priced 3+ cuts. Now, the first full cut isn't priced until late Q4. Goldman and JPMorgan both pushed their first-cut calls to September at earliest.",
-      "<strong>Our base case: hold through summer, one cut in Q4:</strong> The oil-inflation impulse needs to fade before the Fed can act. If core PCE stays above 2.5%, the risk is zero cuts in 2026 — or even a hike if expectations de-anchor."
+      "<strong>White-collar displacement is accelerating:</strong> Tech layoffs have continued into 2026 as companies replace headcount with AI tools. Coding, customer service, and back-office roles are seeing the steepest cuts — ~180K tech jobs eliminated since January.",
+      "<strong>But aggregate unemployment remains low:</strong> The unemployment rate sits at 4.1%, near full employment. Job creation in healthcare, construction, and energy has absorbed displaced workers — so far.",
+      "<strong>The productivity paradox persists:</strong> Despite massive AI investment, economy-wide productivity growth is running at only ~1.5% — below the 2.5%+ needed to justify current capex levels. The payoff may take years, not quarters.",
+      "<strong>Watch the services sector closely:</strong> If AI-driven automation hits services employment (which drives ~70% of GDP), the consumer spending engine could stall. This is a 2027–2028 risk, not an immediate one."
     ],
-    chartType: "line",
-    chartData: [
-      { date: "Jan 24", actual: 5.50, implied: null },
-      { date: "May 24", actual: 5.50, implied: null },
-      { date: "Sep 24", actual: 4.75, implied: null },
-      { date: "Dec 24", actual: 4.25, implied: null },
-      { date: "Mar 25", actual: 4.25, implied: null },
-      { date: "Jun 25", actual: 3.75, implied: null },
-      { date: "Sep 25", actual: 3.75, implied: null },
-      { date: "Dec 25", actual: 3.75, implied: null },
-      { date: "Mar 26", actual: 3.625, implied: 3.625 },
-      { date: "Jun 26", actual: null, implied: 3.625 },
-      { date: "Sep 26", actual: null, implied: 3.55 },
-      { date: "Dec 26", actual: null, implied: 3.40 }
-    ],
-    chartConfig: {
-      xKey: "date",
-      lines: [
-        { dataKey: "actual", name: "Actual Fed Funds Rate (%)", stroke: "#00C853", strokeWidth: 3 },
-        { dataKey: "implied", name: "Market-Implied Path (%)", stroke: "#00BFA5", strokeDasharray: "8 4", strokeWidth: 2 }
-      ]
+    placeholderChart: {
+      type: "bar",
+      title: "AI Job Displacement vs. Creation by Sector",
+      description: "Net job changes by sector attributed to AI adoption, trailing 12 months"
     },
-    source: "Source: Federal Reserve, CME FedWatch, as of March 27, 2026"
+    source: "Source: BLS, Challenger Gray & Christmas, McKinsey Global Institute, as of March 2026"
   },
   {
     id: 4,
+    section: "macro",
     label: "QUESTION 04",
-    question: "Why are stocks down this year?",
+    question: "How will the midterms affect markets?",
+    subtitle: "Historical patterns, policy uncertainty, and what's at stake in November",
     bullets: [
-      "<strong>A double shock — tariffs then war:</strong> The S&P 500 hit all-time highs above 6,400 in January on AI optimism. Then Trump's tariff escalation in February triggered a 10% correction, and the Iran conflict in March added another 6% leg down.",
-      "<strong>Mega-cap tech is leading the decline:</strong> The Magnificent 7 are down ~13% YTD as AI capex questions mount and earnings growth decelerates to 18% — barely above the other 493 stocks at 13%. Equal-weight has outperformed cap-weighted significantly.",
-      "<strong>International markets are the bright spot:</strong> MSCI EAFE is up +10% YTD on European defense spending and cheaper valuations. Emerging markets are up ~5%, led by commodity exporters benefiting from the oil spike.",
-      "<strong>Sector rotation is dramatic:</strong> Energy leads (+15% YTD), while technology (-15%) and consumer discretionary (-10%) lag. Dispersion is at 2020 levels — favoring active management over passive index holding."
+      "<strong>Midterm years are historically volatile — then bullish:</strong> Since 1950, the S&P 500 has averaged a 17% trough-to-peak rally from midterm year lows to 12-month highs. The setup usually involves a Q2–Q3 drawdown followed by a strong Q4 rebound.",
+      "<strong>Policy gridlock is the market's preferred outcome:</strong> Markets tend to rally when midterms produce a split Congress. Reduced legislative risk means fewer surprises on taxes, regulation, and spending — the status quo is priced in.",
+      "<strong>Key policy overhang: tariffs and tax extensions:</strong> The 2025 tax cuts are set to expire in 2027, and the campaign will center on whether to extend them. Tariff policy is also at stake — any shift in trade stance could move sectors dramatically.",
+      "<strong>Defense and energy spending are bipartisan:</strong> Regardless of outcome, the Iran conflict has locked in elevated defense budgets for years. Energy infrastructure spending is similarly supported across the aisle — these are durable secular themes."
     ],
-    chartType: "horizontal-bar",
-    chartData: [
-      { name: "S&P 500", value: -5.8, fill: "#FF5252" },
-      { name: "Nasdaq 100", value: -8.1, fill: "#FF5252" },
-      { name: "Russell 2000", value: -12.3, fill: "#FF5252" },
-      { name: "MSCI EAFE", value: 10.0, fill: "#00C853" },
-      { name: "MSCI EM", value: 5.0, fill: "#00C853" },
-      { name: "Energy", value: 15.2, fill: "#00C853" },
-      { name: "Utilities", value: 4.8, fill: "#00C853" },
-      { name: "Healthcare", value: 2.1, fill: "#00BFA5" },
-      { name: "Technology", value: -15.3, fill: "#FF5252" },
-      { name: "Consumer Disc.", value: -9.7, fill: "#FF5252" }
-    ],
-    chartConfig: {
-      xKey: "value",
-      yKey: "name",
-      layout: "vertical"
+    placeholderChart: {
+      type: "line",
+      title: "S&P 500 Performance in Midterm Years",
+      description: "Average S&P 500 path during midterm years vs. all years, indexed to January"
     },
-    source: "Source: Bloomberg, as of March 25, 2026"
+    source: "Source: Bloomberg, LPL Research, as of March 2026"
   },
+
+  // ── US EQUITIES (3) ────────────────────────────────────────
   {
     id: 5,
+    section: "usEquities",
     label: "QUESTION 05",
-    question: "Is AI a bubble?",
+    question: "How concerned should I be about valuations?",
+    subtitle: "Earnings growth, multiple compression, and what's already priced in",
     bullets: [
-      "<strong>Valuations are elevated but not dot-com extreme:</strong> The Mag 7 trade at ~29x forward earnings vs. the S&P 500 at 22x. At the 2000 peak, tech leaders traded at 60–80x. These companies have real, growing earnings — but the premium is compressing.",
-      "<strong>Capex-to-revenue gap is the key risk:</strong> Hyperscaler AI capex is running at $280B+ annualized, but AI-attributed revenue is ~$95B. The market has shifted from rewarding AI investment promises to demanding actual financial results.",
-      "<strong>Earnings growth is decelerating fast:</strong> Mag 7 profits are expected to grow ~18% in 2026 — the slowest pace since 2022 and only modestly better than the 13% growth expected from the other 493 S&P 500 companies.",
-      "<strong>Not a bubble, but a reality check:</strong> We're rotating from pure AI momentum into companies deploying AI for productivity — enterprise software, healthcare AI, and industrial automation offer better risk/reward at current multiples."
+      "<strong>The S&P 500 at ~20x forward earnings is above average — but not extreme:</strong> The 25-year average is ~16.5x. Today's premium reflects AI-driven earnings growth expectations and lower-for-longer rate assumptions that are now being tested.",
+      "<strong>Earnings growth is the swing factor:</strong> If S&P 500 EPS comes in at $270+ for 2026 (consensus), the current multiple is tolerable. But if the oil shock drags estimates below $250, the index is ~10% overvalued at these levels.",
+      "<strong>The equal-weight S&P 500 tells a different story:</strong> Stripping out mega-cap concentration, the median stock trades at ~16x — right at the historical average. Breadth is actually reasonable; it's the cap-weighted index that looks stretched.",
+      "<strong>Our view: selectivity over broad beta.</strong> We're neutral on the S&P 500 index level but see opportunity in mid-caps, dividend growers, and sectors where earnings revisions are still positive — energy, industrials, and healthcare."
     ],
-    chartType: "line",
-    chartData: [
-      { year: "Yr 0", dotcom: 100, ai: 100 },
-      { year: "Yr 1", dotcom: 155, ai: 148 },
-      { year: "Yr 2", dotcom: 230, ai: 210 },
-      { year: "Yr 3", dotcom: 380, ai: 285 },
-      { year: "Yr 4", dotcom: 510, ai: 320 },
-      { year: "Yr 5", dotcom: 420, ai: null },
-      { year: "Yr 6", dotcom: 180, ai: null },
-      { year: "Yr 7", dotcom: 140, ai: null }
-    ],
-    chartConfig: {
-      xKey: "year",
-      lines: [
-        { dataKey: "dotcom", name: "Dot-Com Rally (1996–2003)", stroke: "#FF5252", strokeWidth: 2 },
-        { dataKey: "ai", name: "AI Rally (2023–Present)", stroke: "#00C853", strokeWidth: 3 }
-      ]
+    placeholderChart: {
+      type: "bar",
+      title: "S&P 500 Forward P/E: Current vs. Historical",
+      description: "Current forward P/E vs. 10-year, 25-year averages and recession trough levels"
     },
-    source: "Source: Bloomberg, indexed to 100 at rally start, as of March 2026"
+    source: "Source: FactSet, Bloomberg, as of March 2026"
   },
   {
     id: 6,
+    section: "usEquities",
     label: "QUESTION 06",
-    question: "What parts of fixed income have performed well this year?",
+    question: "Where is AI in the adoption cycle?",
+    subtitle: "From capex promises to real-world deployment — who's actually monetizing?",
     bullets: [
-      "<strong>Short duration and floating rate lead:</strong> With the curve steepening and oil-driven inflation fears pushing long-end yields higher, 1–3yr Treasuries (+1.8%) and floating-rate notes (+2.4%) are the top performers in investment grade.",
-      "<strong>TIPS are the standout:</strong> Inflation-linked bonds have returned +3.2% YTD as breakevens repriced higher on the oil shock. Real yields near 2% remain historically attractive and offer genuine inflation protection.",
-      "<strong>Credit is holding — selectively:</strong> IG spreads have widened modestly to ~110bp but remain below recession levels. High yield is bifurcated: BB-rated bonds are up +1.0%, while CCC-rated are down -3.5% as default fears resurface.",
-      "<strong>Long duration is the biggest casualty:</strong> 20+ year Treasuries are down ~4.5% as the 10-year yield pushed above 4.4%. We favor intermediate duration and are waiting for yields to peak before extending."
+      "<strong>We're transitioning from \"AI hype\" to \"AI implementation\":</strong> Phase 1 (infrastructure — chips, cloud) rewarded Nvidia and hyperscalers. Phase 2 (deployment — enterprise software, automation) is where returns shift to companies using AI, not just building it.",
+      "<strong>Capex-to-revenue gap is closing but still wide:</strong> Hyperscaler AI capex is running at $280B+ annualized, but AI-attributed revenue is ~$95B. The market has shifted from rewarding investment promises to demanding P&L results.",
+      "<strong>Enterprise AI adoption is inflecting:</strong> 65% of Fortune 500 companies now have active AI deployments (up from 35% a year ago). The biggest ROI is in customer service automation, code generation, and supply chain optimization — not flashy chatbots.",
+      "<strong>Invest in the \"picks and shovels\" layer:</strong> We favor companies providing AI infrastructure (data centers, networking, power) and enterprise platforms over pure-play AI startups. Cash flow and margins matter more than TAM narratives at this stage."
     ],
-    chartType: "horizontal-bar",
-    chartData: [
-      { name: "TIPS", value: 3.2, fill: "#00C853" },
-      { name: "Floating Rate", value: 2.4, fill: "#00C853" },
-      { name: "1-3yr Treasuries", value: 1.8, fill: "#00C853" },
-      { name: "High Yield (BB)", value: 1.0, fill: "#00BFA5" },
-      { name: "IG Corporate", value: 0.3, fill: "#00BFA5" },
-      { name: "MBS", value: -0.5, fill: "#FF7043" },
-      { name: "Munis", value: -1.1, fill: "#FF7043" },
-      { name: "EM Debt (USD)", value: -1.8, fill: "#FF5252" },
-      { name: "High Yield (CCC)", value: -3.5, fill: "#FF5252" },
-      { name: "Long Treasuries (20+yr)", value: -4.5, fill: "#FF5252" }
-    ],
-    chartConfig: {
-      xKey: "value",
-      yKey: "name",
-      layout: "vertical"
+    placeholderChart: {
+      type: "funnel",
+      title: "AI Adoption Curve: Infrastructure → Platform → Application",
+      description: "Phase progression of AI investment cycle with representative companies at each stage"
     },
-    source: "Source: Bloomberg Barclays, ICE BofA, as of March 25, 2026"
+    source: "Source: Goldman Sachs, Gartner, company filings, as of March 2026"
   },
   {
     id: 7,
+    section: "usEquities",
     label: "QUESTION 07",
-    question: "Are yields attractive at these levels?",
+    question: "Should I tilt toward value here?",
+    subtitle: "The growth-to-value rotation, factor spreads, and what history says about this setup",
     bullets: [
-      "<strong>Yields are at multi-year highs:</strong> The 10-year Treasury at 4.43% sits well above the post-GFC average of ~2.5% and near 8-month highs, driven by oil-inflation fears and geopolitical risk premium. For income investors, this is a strong entry point.",
-      "<strong>Real yields are genuinely attractive:</strong> 10-year TIPS yield ~2.0% real — far above the negative real yields that prevailed from 2015–2022. For the first time in a generation, bonds offer meaningful inflation-adjusted income.",
-      "<strong>Credit yields offer compelling carry:</strong> IG corporates yield ~5.2%, high yield 7.8%, and senior secured loans 7.5%. Even after accounting for expected defaults, carry-adjusted returns are historically attractive.",
-      "<strong>We're adding intermediate duration tactically:</strong> At 4.4%+ on the 10-year, we see value in the 5–7 year part of the curve. Our 12-month target range for the 10-year is 3.9–4.6%, suggesting modest capital gains potential."
+      "<strong>Value has outperformed growth by ~800bp YTD:</strong> The Russell 1000 Value is roughly flat while Growth is down ~8%. Energy, financials, and healthcare are carrying value; tech and consumer discretionary are dragging growth.",
+      "<strong>The valuation spread still favors value:</strong> Growth trades at ~28x forward earnings vs. value at ~15x — a 13-point gap that's above the 25-year average of ~10 points. When spreads are this wide, value has historically outperformed over the next 3–5 years.",
+      "<strong>Rising rates mechanically favor value:</strong> Higher discount rates compress the present value of long-duration growth cash flows more than near-term value cash flows. If the 10-year stays above 4%, value's advantage persists.",
+      "<strong>We're adding value tilts — but staying quality-aware:</strong> Not all value is created equal. We favor profitable value (high ROE, strong balance sheets) over deep/distressed value. Dividend growers in financials, industrials, and energy are our preferred expression."
     ],
-    chartType: "area",
-    chartData: [
-      { year: "2005", yield: 4.29 },
-      { year: "2007", yield: 4.63 },
-      { year: "2008", yield: 3.66 },
-      { year: "2010", yield: 3.22 },
-      { year: "2012", yield: 1.80 },
-      { year: "2014", yield: 2.17 },
-      { year: "2016", yield: 2.45 },
-      { year: "2018", yield: 2.91 },
-      { year: "2020", yield: 0.93 },
-      { year: "2021", yield: 1.52 },
-      { year: "2022", yield: 3.88 },
-      { year: "2023", yield: 3.96 },
-      { year: "2024", yield: 4.25 },
-      { year: "2025", yield: 4.18 },
-      { year: "2026", yield: 4.43 }
-    ],
-    chartConfig: {
-      xKey: "year",
-      areaKey: "yield",
-      areaName: "10-Year Treasury Yield (%)",
-      fill: "#00C853",
-      stroke: "#00C853",
-      referenceLines: [
-        { y: 3.10, label: "20-Year Avg: 3.10%", stroke: "#FFB300" }
-      ]
+    placeholderChart: {
+      type: "line",
+      title: "Growth vs. Value: YTD Cumulative Return",
+      description: "Russell 1000 Growth vs. Russell 1000 Value indexed to 100 at Jan 1, 2026"
     },
-    source: "Source: Federal Reserve, Bloomberg, as of March 27, 2026"
+    source: "Source: Russell, Morningstar, Bloomberg, as of March 2026"
   },
+
+  // ── INTERNATIONAL EQUITIES (1) ─────────────────────────────
   {
     id: 8,
+    section: "intlEquities",
     label: "QUESTION 08",
-    question: "Why hasn't gold worked as a geopolitical hedge since the Iran war?",
+    question: "Why should a US-based investor still allocate to international equities?",
+    subtitle: "Valuation discount, earnings momentum, and the diversification case",
     bullets: [
-      "<strong>Gold is down sharply despite war:</strong> Spot gold has plunged from $5,400 in January to ~$4,430–4,560 in late March — a stunning ~16% decline in 2026. This is the opposite of what most investors expected from a major geopolitical crisis.",
-      "<strong>The dollar surge is the culprit:</strong> DXY has strengthened ~4% since mid-February as flight-to-safety flows favored USD over gold. A 1% rise in DXY historically produces a 1–1.5% decline in gold's dollar price.",
-      "<strong>Rising real yields raise the opportunity cost:</strong> With 10-year TIPS yielding ~2.0% real, the cost of holding zero-yielding gold is elevated. Oil-driven inflation is pushing nominal yields higher, making Treasuries a competitive safe haven.",
-      "<strong>Gold isn't broken — it's just overwhelmed:</strong> After a 65% surge in 2025, gold was overextended. The current pullback is a positioning unwind, not a fundamental regime change. We still see gold as a long-term portfolio stabilizer."
+      "<strong>International stocks are the cheapest relative to the US in 20+ years:</strong> MSCI EAFE trades at ~13x forward earnings vs. the S&P 500 at ~20x. Even adjusting for sector mix, the discount is historically wide — and starting to narrow.",
+      "<strong>Europe is having a moment:</strong> European defense spending is surging post-Iran conflict, fiscal stimulus is accelerating, and the ECB is cutting rates. STOXX 600 is up ~8% YTD in dollar terms — outpacing the S&P by 14 percentage points.",
+      "<strong>Emerging markets offer commodity upside:</strong> Brazil, Saudi Arabia, and Indonesia are direct beneficiaries of higher oil and commodity prices. EM earnings revisions are turning positive for the first time since 2021.",
+      "<strong>Currency tailwinds are building:</strong> The dollar's 2025–2026 strength may be peaking as US growth decelerates and rate differentials narrow. A weaker dollar would amplify international equity returns for US-based investors."
     ],
-    chartType: "composed",
-    chartData: [
-      { date: "Sep 25", gold: 4900, dxy: 97.5 },
-      { date: "Oct 25", gold: 5100, dxy: 97.8 },
-      { date: "Nov 25", gold: 5250, dxy: 98.0 },
-      { date: "Dec 25", gold: 5350, dxy: 98.2 },
-      { date: "Jan 26", gold: 5400, dxy: 96.5 },
-      { date: "Feb 26", gold: 5050, dxy: 98.8 },
-      { date: "Mar 26", gold: 4500, dxy: 99.9 }
-    ],
-    chartConfig: {
-      xKey: "date",
-      lines: [
-        { dataKey: "gold", name: "Gold ($/oz)", stroke: "#FFB300", yAxisId: "left", strokeWidth: 3 },
-        { dataKey: "dxy", name: "DXY Index", stroke: "#00BFA5", yAxisId: "right", strokeWidth: 2 }
-      ]
+    placeholderChart: {
+      type: "bar",
+      title: "YTD Returns: US vs. International (USD)",
+      description: "S&P 500, MSCI EAFE, MSCI EM, and regional breakdowns — YTD total return in USD"
     },
-    source: "Source: Bloomberg, World Gold Council, as of March 26, 2026"
+    source: "Source: MSCI, Bloomberg, as of March 2026"
   },
+
+  // ── FIXED INCOME (1) ───────────────────────────────────────
   {
     id: 9,
+    section: "fixedIncome",
     label: "QUESTION 09",
-    question: "Which alternative strategies have done well this year?",
+    question: "Is private credit a systemic risk?",
+    subtitle: "The $1.7T market, leverage concerns, and what advisors need to know",
     bullets: [
-      "<strong>Managed futures are thriving:</strong> Trend-following strategies are up ~9% YTD, capturing persistent trends in energy (long), bonds (short), and USD (long). Historically, when oil trades $100–140, managed futures gain ~9% on average.",
-      "<strong>Global macro is the top allocator pick for 2026:</strong> Discretionary macro strategies are up ~7% YTD on FX volatility, rate divergence, and commodity dislocations. Over half of institutional allocators ranked it in their top two strategies.",
-      "<strong>Private credit continues to compound:</strong> Senior direct lending yields of 9–11% with first-lien protection remain attractive, though higher-for-longer rates are testing weaker borrowers in CCC-rated vintages from 2021.",
-      "<strong>Allocators are increasing hedge fund exposure:</strong> 64% of institutional investors plan to increase hedge fund allocations in 2026, translating to ~$24B of net inflows — the strongest demand since 2018."
+      "<strong>Private credit has tripled in five years:</strong> The market has grown from ~$600B in 2020 to ~$1.7T today, fueled by banks retreating from leveraged lending and investors chasing yield. Growth this fast always warrants scrutiny.",
+      "<strong>Default rates are rising from a low base:</strong> Private credit defaults have ticked up to ~3.5% from ~2% a year ago, driven by highly leveraged 2021-vintage deals. Senior secured lending (the bulk of the market) is holding up well — it's the riskier tranches showing stress.",
+      "<strong>Systemic risk is limited — for now:</strong> Unlike the 2008 mortgage market, private credit isn't deeply interconnected with the banking system. But rising correlation between private credit and public high yield suggests the \"diversification\" benefit is overstated.",
+      "<strong>Selectivity is paramount:</strong> We still see value in senior direct lending at 9–11% yields with first-lien protection. But we're avoiding 2021-vintage funds with excessive leverage and recommending investors stress-test their private credit allocations for a recession scenario."
     ],
-    chartType: "bar",
-    chartData: [
-      { name: "Managed Futures", value: 9.1, fill: "#00C853" },
-      { name: "Global Macro", value: 7.0, fill: "#00C853" },
-      { name: "Private Credit", value: 5.2, fill: "#00BFA5" },
-      { name: "Multi-Strategy", value: 4.5, fill: "#00BFA5" },
-      { name: "Quant Equity", value: 3.8, fill: "#00BFA5" },
-      { name: "Long/Short Equity", value: 2.1, fill: "#FFB300" },
-      { name: "Merger Arb", value: 0.8, fill: "#FFB300" },
-      { name: "Risk Parity", value: -3.2, fill: "#FF5252" }
-    ],
-    chartConfig: {
-      xKey: "name",
-      bars: [
-        { dataKey: "value", name: "YTD Return (%)" }
-      ]
+    placeholderChart: {
+      type: "area",
+      title: "Private Credit Market Size & Default Rate",
+      description: "AUM growth of private credit market with overlay of trailing 12-month default rates"
     },
-    source: "Source: HFR, Barclays, BNP Paribas, as of March 2026"
+    source: "Source: Preqin, PitchBook, LCD, as of March 2026"
   },
+
+  // ── PORTFOLIO & POSITIONING (1) ────────────────────────────
   {
     id: 10,
+    section: "portfolio",
     label: "QUESTION 10",
-    question: "What is investor risk appetite right now?",
+    question: "What does a resilient portfolio look like today?",
+    subtitle: "Asset allocation framework for a world of geopolitical risk, sticky inflation, and AI disruption",
     bullets: [
-      "<strong>Bearish sentiment has surged:</strong> AAII bearish readings jumped to 46.4% in mid-March, up from 35.5% two weeks prior. The CNN Fear & Greed Index plunged to \"Extreme Fear\" at 19.97 — its lowest since October 2022.",
-      "<strong>Massive rotation into safety:</strong> Capital is flowing out of high-growth tech and into energy, defense, and money markets. The VIX breached the critical 19.9 level, signaling a shift from complacency to high-alert status.",
-      "<strong>Institutional positioning reflects caution:</strong> Fund managers are overweight cash and energy, underweight tech and consumer discretionary. Net equity exposure has fallen sharply from the bullish consensus at year-start.",
-      "<strong>Contrarian signal is building — but not yet extreme:</strong> While sentiment is pessimistic, it hasn't reached the capitulatory -40% bull-bear levels seen at true bottoms. We're building watchlists, not going all-in."
+      "<strong>Diversification is working again — lean into it:</strong> The 60/40 portfolio's rough 2022 was an anomaly of the rate-shock era. With bonds yielding 4%+ and equities facing earnings risk, balanced portfolios are back to providing genuine two-sided protection.",
+      "<strong>Add real assets for inflation hedging:</strong> TIPS, commodity producers, infrastructure REITs, and energy midstream offer inflation sensitivity that nominal bonds can't provide. We recommend a 10–15% allocation to real assets as a permanent portfolio sleeve.",
+      "<strong>Build in optionality with alternatives:</strong> Managed futures, global macro, and multi-strategy hedge funds have delivered strong risk-adjusted returns in 2026. A 10–20% allocation to liquid alternatives improves Sharpe ratios meaningfully in the current regime.",
+      "<strong>Stay invested but stay humble:</strong> The biggest risk is overconfidence in any single scenario. A resilient portfolio owns some duration (for recession), some commodities (for inflation), some international (for dollar weakness), and some cash (for opportunity). Balance beats conviction right now."
     ],
-    chartType: "bar",
-    chartData: [
-      { name: "Cash", value: 18, fill: "#00C853" },
-      { name: "Energy", value: 14, fill: "#00C853" },
-      { name: "Healthcare", value: 5, fill: "#00BFA5" },
-      { name: "Utilities", value: 3, fill: "#00BFA5" },
-      { name: "Industrials", value: -2, fill: "#FF7043" },
-      { name: "Financials", value: -5, fill: "#FF7043" },
-      { name: "Consumer Disc.", value: -12, fill: "#FF5252" },
-      { name: "Technology", value: -22, fill: "#FF5252" }
-    ],
-    chartConfig: {
-      xKey: "name",
-      bars: [
-        { dataKey: "value", name: "Net Overweight/Underweight (%)" }
-      ]
+    placeholderChart: {
+      type: "pie",
+      title: "Resilient Portfolio: Recommended Allocation",
+      description: "Target allocation across equities, fixed income, real assets, alternatives, and cash"
     },
-    source: "Source: AAII, CBOE, BofA Fund Manager Survey, as of March 2026"
-  }
+    source: "Source: Internal analysis, as of March 2026"
+  },
 ];
