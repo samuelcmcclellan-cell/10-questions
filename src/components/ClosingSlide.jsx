@@ -37,7 +37,7 @@ export default function ClosingSlide({ onRestart }) {
 
         <div className="mt-16 space-y-2">
           <p className="text-text-muted text-[10px] tracking-[0.15em] uppercase opacity-50">
-            10 Questions — Spring 2026
+            12 Questions — Spring 2026
           </p>
           <p className="text-text-muted text-[9px] leading-relaxed max-w-sm mx-auto opacity-40">
             This material is for informational purposes only and does not constitute investment advice.

@@ -8,7 +8,7 @@ export default function QuestionSlide({ data, currentIndex, total, isVisible }) 
     <div className="w-full h-full flex flex-col px-6 md:px-12 lg:px-20 py-5 md:py-6 pb-12 md:pb-14">
       {/* Section + Question header */}
       <div className="mb-4 md:mb-5 animate-fade-in flex-shrink-0">
-        {/* Section pill */}
+        {/* Section pill + Owner */}
         <div className="flex items-center gap-3 mb-2">
           <span
             className="inline-block text-[9px] md:text-[10px] font-bold tracking-[0.2em] uppercase px-2.5 py-0.5 rounded-full"
@@ -23,6 +23,11 @@ export default function QuestionSlide({ data, currentIndex, total, isVisible }) 
           <span className="text-text-muted text-[10px] md:text-xs tracking-[0.15em] uppercase font-medium">
             {data.label}
           </span>
+          {data.owner && (
+            <span className="text-text-muted text-[10px] md:text-xs tracking-wide font-medium ml-auto opacity-60">
+              Owner: {data.owner}
+            </span>
+          )}
         </div>
 
         {/* Question */}
@@ -41,13 +46,44 @@ export default function QuestionSlide({ data, currentIndex, total, isVisible }) 
       {/* Content area: placeholder chart + bullets */}
       <div className="flex-1 flex flex-col md:flex-row gap-4 md:gap-6 min-h-0 overflow-hidden">
         {/* Placeholder Chart */}
-        <div className="w-full md:w-[55%] min-h-0 flex-1 md:flex-initial md:h-full">
-          <PlaceholderChart
-            type={data.placeholderChart.type}
-            title={data.placeholderChart.title}
-            description={data.placeholderChart.description}
-            sectionColor={section.color}
-          />
+        <div className="w-full md:w-[55%] min-h-0 flex-1 md:flex-initial md:h-full flex flex-col gap-3">
+          <div className="flex-1 min-h-0">
+            <PlaceholderChart
+              type={data.placeholderChart.type}
+              title={data.placeholderChart.title}
+              description={data.placeholderChart.description}
+              sectionColor={section.color}
+            />
+          </div>
+
+          {/* ETF Ticker Placeholders */}
+          {data.tickers && data.tickers.length > 0 && (
+            <div className="flex gap-2 flex-shrink-0">
+              {data.tickers.map((ticker) => (
+                <div
+                  key={ticker}
+                  className="flex items-center gap-2 px-3 py-1.5 rounded-lg"
+                  style={{
+                    backgroundColor: `${section.color}08`,
+                    border: `1px solid ${section.color}20`,
+                  }}
+                >
+                  <span
+                    className="text-[9px] font-bold tracking-[0.1em] uppercase"
+                    style={{ color: `${section.color}90` }}
+                  >
+                    ETF
+                  </span>
+                  <span
+                    className="text-sm font-semibold tracking-wide"
+                    style={{ color: section.color }}
+                  >
+                    {ticker}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Bullets */}

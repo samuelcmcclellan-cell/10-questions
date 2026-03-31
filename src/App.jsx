@@ -6,7 +6,7 @@ import Navigation from './components/Navigation';
 import PasswordGate from './components/PasswordGate';
 import { QUESTIONS_DATA } from './data/questions';
 
-// Total slides: title (0) + 10 questions (1-10) + closing (11)
+// Total slides: title (0) + 12 questions (1-12) + closing (13)
 const TOTAL_SLIDES = QUESTIONS_DATA.length + 2;
 
 export default function App() {
