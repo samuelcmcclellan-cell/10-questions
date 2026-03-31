@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import TitleSlide from './components/TitleSlide';
 import QuestionSlide from './components/QuestionSlide';
 import ClosingSlide from './components/ClosingSlide';
@@ -15,6 +15,7 @@ export default function App() {
   );
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const touchStart = useRef(null);
 
   const goToSlide = useCallback((index) => {
     if (isTransitioning) return;
@@ -45,6 +46,23 @@ export default function App() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [navigate]);
 
+  // Touch/swipe navigation for mobile
+  const handleTouchStart = useCallback((e) => {
+    touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+  }, []);
+
+  const handleTouchEnd = useCallback((e) => {
+    if (!touchStart.current) return;
+    const dx = e.changedTouches[0].clientX - touchStart.current.x;
+    const dy = e.changedTouches[0].clientY - touchStart.current.y;
+    // Only register horizontal swipes where horizontal distance > vertical
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+      if (dx < 0) navigate(1);  // swipe left = next
+      else navigate(-1);         // swipe right = prev
+    }
+    touchStart.current = null;
+  }, [navigate]);
+
   const renderSlide = () => {
     if (currentSlide === 0) {
       return <TitleSlide onStart={() => goToSlide(1)} />;
@@ -72,7 +90,11 @@ export default function App() {
   }
 
   return (
-    <div className="w-full h-screen bg-navy overflow-hidden relative">
+    <div
+      className="w-full h-screen bg-navy overflow-hidden relative"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
       {/* Slide content with transition */}
       <div
         key={currentSlide}

@@ -10,36 +10,36 @@ export default function ClosingSlide({ onRestart }) {
         }}
       />
 
-      <div className="relative z-10 text-center px-8 animate-fade-in max-w-xl">
-        <div className="w-10 h-px bg-white/15 mx-auto mb-10" />
+      <div className="relative z-10 text-center px-6 sm:px-8 animate-fade-in max-w-xl">
+        <div className="w-8 sm:w-10 h-px bg-white/15 mx-auto mb-6 sm:mb-10" />
 
-        <p className="text-text-muted text-xs tracking-[0.3em] uppercase mb-6 font-medium">
+        <p className="text-text-muted text-[10px] sm:text-xs tracking-[0.3em] uppercase mb-4 sm:mb-6 font-medium">
           Thank You
         </p>
 
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight tracking-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-5 leading-tight tracking-tight">
           Stay Invested.<br />Stay Informed.
         </h2>
 
-        <p className="text-text-secondary text-base md:text-lg leading-relaxed mb-10 max-w-md mx-auto">
+        <p className="text-text-secondary text-sm sm:text-base md:text-lg leading-relaxed mb-7 sm:mb-10 max-w-md mx-auto">
           Markets reward patience and discipline. Review the data, stress-test your assumptions, and position accordingly.
         </p>
 
         <button
           onClick={onRestart}
-          className="group inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-white/15 bg-white/5 text-white/80 text-sm font-medium transition-all duration-300 hover:bg-white/10 hover:border-white/25 cursor-pointer"
+          className="group inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full border border-white/15 bg-white/5 text-white/80 text-xs sm:text-sm font-medium transition-all duration-300 hover:bg-white/10 hover:border-white/25 cursor-pointer"
         >
-          <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:-translate-x-1 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5 transition-transform duration-300 group-hover:-translate-x-1 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
           </svg>
           Review Again
         </button>
 
-        <div className="mt-16 space-y-2">
-          <p className="text-text-muted text-[10px] tracking-[0.15em] uppercase opacity-50">
+        <div className="mt-10 sm:mt-16 space-y-2">
+          <p className="text-text-muted text-[9px] sm:text-[10px] tracking-[0.15em] uppercase opacity-50">
             13 Questions — Spring 2026
           </p>
-          <p className="text-text-muted text-[9px] leading-relaxed max-w-sm mx-auto opacity-40">
+          <p className="text-text-muted text-[8px] sm:text-[9px] leading-relaxed max-w-sm mx-auto opacity-40">
             This material is for informational purposes only and does not constitute investment advice.
             Past performance is not indicative of future results. Investing involves risk.
           </p>

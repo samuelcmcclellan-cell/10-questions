@@ -5,13 +5,13 @@ export default function QuestionSlide({ data, currentIndex, total, isVisible }) 
   const section = SECTIONS[data.section];
 
   return (
-    <div className="w-full h-full flex flex-col px-6 md:px-12 lg:px-20 py-5 md:py-6 pb-12 md:pb-14">
+    <div className="w-full h-full flex flex-col px-4 sm:px-6 md:px-12 lg:px-20 py-4 md:py-6 pb-14 md:pb-14 overflow-y-auto md:overflow-hidden">
       {/* Section + Question header */}
-      <div className="mb-4 md:mb-5 animate-fade-in flex-shrink-0">
+      <div className="mb-3 md:mb-5 animate-fade-in flex-shrink-0">
         {/* Section pill + Owner */}
-        <div className="flex items-center gap-3 mb-2">
+        <div className="flex items-center gap-2 sm:gap-3 mb-1.5 md:mb-2">
           <span
-            className="inline-block text-[9px] md:text-[10px] font-bold tracking-[0.2em] uppercase px-2.5 py-0.5 rounded-full"
+            className="inline-block text-[8px] sm:text-[9px] md:text-[10px] font-bold tracking-[0.2em] uppercase px-2 sm:px-2.5 py-0.5 rounded-full"
             style={{
               color: section.color,
               backgroundColor: `${section.color}15`,
@@ -20,34 +20,34 @@ export default function QuestionSlide({ data, currentIndex, total, isVisible }) 
           >
             {section.label}
           </span>
-          <span className="text-text-muted text-[10px] md:text-xs tracking-[0.15em] uppercase font-medium">
+          <span className="text-text-muted text-[9px] sm:text-[10px] md:text-xs tracking-[0.15em] uppercase font-medium">
             {data.label}
           </span>
           {data.owner && (
-            <span className="text-text-muted text-[10px] md:text-xs tracking-wide font-medium ml-auto opacity-60">
+            <span className="text-text-muted text-[9px] sm:text-[10px] md:text-xs tracking-wide font-medium ml-auto opacity-60">
               Owner: {data.owner}
             </span>
           )}
         </div>
 
         {/* Question */}
-        <h2 className="text-xl md:text-2xl lg:text-[28px] font-bold text-white leading-snug tracking-tight">
+        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-bold text-white leading-snug tracking-tight">
           {data.question}
         </h2>
 
         {/* Subtitle */}
         {data.subtitle && (
-          <p className="text-text-muted text-xs md:text-sm mt-1.5 leading-relaxed max-w-3xl">
+          <p className="text-text-muted text-[11px] sm:text-xs md:text-sm mt-1 md:mt-1.5 leading-relaxed max-w-3xl">
             {data.subtitle}
           </p>
         )}
       </div>
 
       {/* Content area: placeholder chart + bullets */}
-      <div className="flex-1 flex flex-col md:flex-row gap-4 md:gap-6 min-h-0 overflow-hidden">
-        {/* Placeholder Chart */}
-        <div className="w-full md:w-[55%] min-h-0 flex-1 md:flex-initial md:h-full flex flex-col gap-3">
-          <div className="flex-1 min-h-0">
+      <div className="flex-1 flex flex-col md:flex-row gap-3 md:gap-6 min-h-0 md:overflow-hidden">
+        {/* Placeholder Chart — compact on mobile */}
+        <div className="w-full md:w-[55%] flex-shrink-0 md:flex-shrink md:flex-initial md:h-full flex flex-col gap-2 md:gap-3">
+          <div className="h-36 sm:h-44 md:h-auto md:flex-1 min-h-0">
             <PlaceholderChart
               type={data.placeholderChart.type}
               title={data.placeholderChart.title}
@@ -62,20 +62,20 @@ export default function QuestionSlide({ data, currentIndex, total, isVisible }) 
               {data.tickers.map((ticker) => (
                 <div
                   key={ticker}
-                  className="flex items-center gap-2 px-3 py-1.5 rounded-lg"
+                  className="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg"
                   style={{
                     backgroundColor: `${section.color}08`,
                     border: `1px solid ${section.color}20`,
                   }}
                 >
                   <span
-                    className="text-[9px] font-bold tracking-[0.1em] uppercase"
+                    className="text-[8px] sm:text-[9px] font-bold tracking-[0.1em] uppercase"
                     style={{ color: `${section.color}90` }}
                   >
                     ETF
                   </span>
                   <span
-                    className="text-sm font-semibold tracking-wide"
+                    className="text-xs sm:text-sm font-semibold tracking-wide"
                     style={{ color: section.color }}
                   >
                     {ticker}
@@ -86,13 +86,13 @@ export default function QuestionSlide({ data, currentIndex, total, isVisible }) 
           )}
         </div>
 
-        {/* Bullets */}
-        <div className="w-full md:w-[45%] flex flex-col justify-center overflow-y-auto min-h-0 pr-1">
-          <ul className="space-y-3 md:space-y-4">
+        {/* Bullets — scrollable on both mobile and desktop */}
+        <div className="w-full md:w-[45%] flex flex-col justify-start md:justify-center overflow-y-auto min-h-0 pr-1">
+          <ul className="space-y-2.5 sm:space-y-3 md:space-y-4">
             {data.bullets.map((bullet, i) => (
               <li
                 key={i}
-                className="flex gap-2.5 text-[13px] md:text-sm text-text-secondary leading-relaxed animate-fade-in"
+                className="flex gap-2 sm:gap-2.5 text-[12px] sm:text-[13px] md:text-sm text-text-secondary leading-relaxed animate-fade-in"
                 style={{ animationDelay: `${(i + 1) * 80}ms` }}
               >
                 <span
@@ -107,8 +107,8 @@ export default function QuestionSlide({ data, currentIndex, total, isVisible }) 
       </div>
 
       {/* Source line */}
-      <div className="mt-2.5 flex-shrink-0">
-        <p className="text-text-muted text-[10px] md:text-xs opacity-60">
+      <div className="mt-2 md:mt-2.5 flex-shrink-0">
+        <p className="text-text-muted text-[9px] sm:text-[10px] md:text-xs opacity-60">
           {data.source}
         </p>
       </div>
