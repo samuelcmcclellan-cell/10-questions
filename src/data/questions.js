@@ -1,6 +1,5 @@
 export const SECTIONS = {
   macro: { label: "MACRO", color: "#FF7043" },
-  economyPolicy: { label: "ECONOMY & POLICY", color: "#42A5F5" },
   usEquities: { label: "US EQUITIES", color: "#00C853" },
   intlEquities: { label: "INTERNATIONAL EQUITIES", color: "#00BFA5" },
   fixedIncome: { label: "FIXED INCOME", color: "#FFB300" },
@@ -52,31 +51,31 @@ export const QUESTIONS_DATA = [
     source: "Source: BLS, EIA, Bloomberg, as of March 2026"
   },
 
-  // ── ECONOMY & POLICY (2) ───────────────────────────────────
+  // ── MACRO continued (2) ─────────────────────────────────────
   {
     id: 3,
-    section: "economyPolicy",
+    section: "macro",
     owner: "S",
     label: "QUESTION 03",
     question: "Is AI leading to higher unemployment?",
-    subtitle: "Immigration dynamics, hire-and-fire trends, and where jobs are shifting",
+    subtitle: "AI is driving labor disruption — both creating and replacing jobs",
     bullets: [
-      "<strong>Immigration dynamics are reshaping the labor supply:</strong> Net immigration has slowed sharply under tighter policy, reducing the labor pool in sectors that depend on it — agriculture, hospitality, and construction. This structural shift tightens the market even as AI displaces other roles.",
-      "<strong>We're in a low hire-and-fire environment:</strong> Both hiring rates and layoff rates are historically subdued. Companies are hoarding talent rather than aggressively cutting or adding — creating a \"frozen\" labor market where headline unemployment stays low (~4.1%) but job mobility is declining.",
-      "<strong>The job shift by category tells the real story:</strong> Healthcare and education continue adding jobs (+320K and +85K respectively over the past 12 months). Software engineering roles have seen net declines of ~60K as AI coding tools reduce headcount needs. The displacement is sector-specific, not economy-wide.",
-      "<strong>Watch the services sector for the next phase:</strong> If AI-driven automation hits services employment (which drives ~70% of GDP), the consumer spending engine could stall. This is a 2027–2028 risk, not an immediate one."
+      "<strong>AI is both destroying and creating jobs — the net math is positive but uneven:</strong> AI-attributed tech layoffs hit ~78K in the first half of 2025, and entry-level postings have declined ~35% since 2023. But the AI boom is simultaneously generating massive employment in data center construction, hardware, and AI development itself — with projections of 170M new roles globally by 2030 vs. 92M displaced.",
+      "<strong>The trades boom is real:</strong> Demand for skilled trades is growing 3x faster than professional roles. The data center buildout alone needs ~300K new electricians over the next decade, with salaries climbing 32% above non-data-center construction. Demand for robotics technicians is up 107%, HVAC engineers up 67%, and construction roles up 30% since late 2022. Jensen Huang called this \"the largest infrastructure build-out in human history.\"",
+      "<strong>Software engineering is being reshaped, not eliminated:</strong> 92% of developers now use AI coding tools, and junior roles are shrinking. But AI engineer demand has surged — prompt engineer postings up 136% this year, average AI engineer salaries at $206K (up $50K YoY), and AI-related job openings up 25% YoY. The role is evolving from writing code to orchestrating AI systems.",
+      "<strong>Immigration and a low hire-and-fire environment are shaping the backdrop:</strong> Net immigration has slowed sharply, tightening the labor pool in agriculture, hospitality, and construction. Meanwhile, both hiring and layoff rates are historically subdued — a \"frozen\" labor market where unemployment stays low (~4.1%) but job mobility is declining. The displacement is real but sector-specific, not economy-wide."
     ],
     tickers: ["BAI", "QUAL"],
     placeholderChart: {
       type: "bar",
-      title: "Change in Jobs by Category (Trailing 12M)",
-      description: "Net job gains/losses across healthcare, education, software engineering, and other sectors"
+      title: "AI Job Impact: Displacement vs. Creation by Sector",
+      description: "Net job changes across trades, AI/tech, healthcare, and traditional software roles"
     },
-    source: "Source: BLS, Challenger Gray & Christmas, Indeed Hiring Lab, as of March 2026"
+    source: "Source: BLS, Randstad, ITIF, Challenger Gray & Christmas, as of March 2026"
   },
   {
     id: 4,
-    section: "economyPolicy",
+    section: "macro",
     owner: "M / JJ",
     label: "QUESTION 04",
     question: "What are the implications of the midterms?",
