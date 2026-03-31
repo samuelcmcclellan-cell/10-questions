@@ -28,7 +28,7 @@ export default function TitleSlide({ onStart }) {
 
         {/* Main title */}
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-3 leading-[0.9] tracking-tight">
-          12 Questions
+          13 Questions
         </h1>
 
         {/* Subtitle */}

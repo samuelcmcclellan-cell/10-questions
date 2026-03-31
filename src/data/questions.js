@@ -15,14 +15,14 @@ export const QUESTIONS_DATA = [
     owner: "F",
     label: "QUESTION 01",
     question: "How does the Iran war impact the US economy?",
-    subtitle: "Energy security, inflation protection, and long-term economic consequences",
+    subtitle: "Energy security, defense spending, and long-term economic consequences",
     bullets: [
       "<strong>Energy security is now a first-order economic risk:</strong> Iran's disruption of the Strait of Hormuz has taken ~10 million barrels/day offline — 21% of global supply. Brent surged past $120/bbl before settling near $108–113. Energy independence and infrastructure resilience are no longer hypothetical concerns.",
-      "<strong>Inflation is re-accelerating — TIPS are back in focus:</strong> Sustained $90+ oil is pushing headline CPI from 2.4% back toward 3.0–3.5% by mid-year. TIPS breakevens have widened meaningfully, and we see value in inflation-linked bonds as a hedge within portfolios — not as a standalone call, but as a core allocation.",
-      "<strong>We don't think we're headed to recession — but there will be lasting impacts:</strong> Every $10/bbl sustained increase in oil historically shaves 0.1–0.2% off GDP. Combined with tariff headwinds, GDPNow has moved to sub-2% for Q2. The war's effects on supply chains, defense spending, and fiscal policy will persist well beyond any ceasefire.",
-      "<strong>Position for stagflationary risk:</strong> We see opportunity in energy infrastructure, TIPS, and commodity baskets. Duration risk is elevated as the oil-inflation feedback loop delays the Fed's easing cycle."
+      "<strong>The growth impact is real but manageable:</strong> Every $10/bbl sustained increase in oil historically shaves 0.1–0.2% off GDP. Combined with tariff headwinds, GDPNow has moved to sub-2% for Q2. The drag is significant, but consumer balance sheets and labor markets remain supportive.",
+      "<strong>We don't think we're headed to recession — but there will be lasting impacts:</strong> The war's effects on supply chains, defense spending, and fiscal policy will persist well beyond any ceasefire. Defense budgets are locked in for years, and energy infrastructure investment is accelerating across the board.",
+      "<strong>Position for stagflationary risk:</strong> We see opportunity in energy infrastructure and commodity baskets. The oil-inflation feedback loop is delaying the Fed's easing cycle, creating a prolonged environment where real assets and defense-linked equities can outperform."
     ],
-    tickers: ["TIP", "DJP"],
+    tickers: ["IDEF", "POWR"],
     placeholderChart: {
       type: "timeline",
       title: "Oil Shock Episodes & GDP Impact",
@@ -36,14 +36,14 @@ export const QUESTIONS_DATA = [
     owner: "F",
     label: "QUESTION 02",
     question: "What do higher oil prices mean for inflation and the Fed?",
-    subtitle: "Commodity pass-through, CPI trajectory, and why the Fed is trapped",
+    subtitle: "Commodity pass-through, CPI trajectory, TIPS, and why the Fed is trapped",
     bullets: [
       "<strong>Oil ripples through everything:</strong> Crude is up ~50% YTD, but the inflationary transmission goes beyond gasoline — into fertilizers, plastics, freight, and chemicals — with a 3–6 month lag.",
-      "<strong>February CPI was 2.4% — but March will be sharply higher:</strong> Energy services were already +6.3% YoY and natural gas +10.9%. The March print is expected above 3%.",
-      "<strong>Commodities are spiking in tandem:</strong> Aluminum at a 4-year high, one-third of global helium offline, food prices +3.1% YoY before the shock hit.",
-      "<strong>The Fed can't cut into a supply shock:</strong> The FOMC held at 3.50–3.75% and is trapped — oil acts as both a growth drag and inflation accelerant. The risk of zero cuts in 2026 is rising."
+      "<strong>February CPI was 2.4% — but March will be sharply higher:</strong> Energy services were already +6.3% YoY and natural gas +10.9%. The March print is expected above 3%. TIPS breakevens have widened meaningfully, and we see value in inflation-linked bonds as a core portfolio hedge — not a standalone call, but a structural allocation.",
+      "<strong>Commodities are spiking in tandem:</strong> Aluminum at a 4-year high, one-third of global helium offline, food prices +3.1% YoY before the shock hit. The breadth of the commodity move reinforces the case for inflation protection.",
+      "<strong>The Fed can't cut into a supply shock:</strong> The FOMC held at 3.50–3.75% and is trapped — oil acts as both a growth drag and inflation accelerant. The risk of zero cuts in 2026 is rising. TIPS and flexible income strategies are well-positioned for this environment."
     ],
-    tickers: ["DBC", "GSG"],
+    tickers: ["TIP", "BINC"],
     placeholderChart: {
       type: "dual-axis-line",
       title: "Oil Price vs. CPI (YoY)",
@@ -66,7 +66,7 @@ export const QUESTIONS_DATA = [
       "<strong>The job shift by category tells the real story:</strong> Healthcare and education continue adding jobs (+320K and +85K respectively over the past 12 months). Software engineering roles have seen net declines of ~60K as AI coding tools reduce headcount needs. The displacement is sector-specific, not economy-wide.",
       "<strong>Watch the services sector for the next phase:</strong> If AI-driven automation hits services employment (which drives ~70% of GDP), the consumer spending engine could stall. This is a 2027–2028 risk, not an immediate one."
     ],
-    tickers: ["XLV", "XLRE"],
+    tickers: ["BAI", "QUAL"],
     placeholderChart: {
       type: "bar",
       title: "Change in Jobs by Category (Trailing 12M)",
@@ -87,7 +87,7 @@ export const QUESTIONS_DATA = [
       "<strong>Key policy overhang: tariffs and tax extensions:</strong> The 2025 tax cuts expire in 2027, and the campaign will center on whether to extend them. Tariff policy is also at stake — any shift in trade stance could move sectors dramatically.",
       "<strong>Defense and energy spending are bipartisan:</strong> Regardless of outcome, the Iran conflict has locked in elevated defense budgets for years. Energy infrastructure spending is similarly supported across the aisle — these are durable secular themes."
     ],
-    tickers: ["ITA", "XLE"],
+    tickers: ["IDEF", "BLCR"],
     placeholderChart: {
       type: "line",
       title: "S&P 500 Performance in Midterm Years",
@@ -110,7 +110,7 @@ export const QUESTIONS_DATA = [
       "<strong>The rates view matters here:</strong> The market is pricing in a higher-for-longer rate environment, but we think we'll see at least one cut this year. If the Fed moves, the impact on rates — and the re-rating potential for equities — is meaningful.",
       "<strong>Our view: selectivity over broad beta.</strong> We see opportunity in mid-caps, dividend growers, and sectors where earnings revisions are still positive — energy, industrials, and healthcare."
     ],
-    tickers: ["RSP", "SCHD"],
+    tickers: ["BLCR", "QUAL"],
     placeholderChart: {
       type: "bar",
       title: "S&P 500 & Tech Forward P/E vs. 5-Year Average",
@@ -131,7 +131,7 @@ export const QUESTIONS_DATA = [
       "<strong>The intersection of AI and energy is compelling:</strong> AI data centers are driving massive power demand growth. Companies providing power generation, grid infrastructure, and cooling solutions for AI compute are seeing secular tailwinds from both themes simultaneously.",
       "<strong>We see opportunity in the \"picks and shovels\" layer:</strong> Data centers, networking, power infrastructure, and enterprise platforms — where cash flow and margins matter more than TAM narratives."
     ],
-    tickers: ["IGM", "DRLL"],
+    tickers: ["BAI", "POWR"],
     placeholderChart: {
       type: "funnel",
       title: "Thematic Opportunity Map: AI + Energy Security",
@@ -152,7 +152,7 @@ export const QUESTIONS_DATA = [
       "<strong>Large cap vs. small cap — we're getting more convicted:</strong> Small caps have underperformed large caps significantly, but valuations are at extreme discounts. If the Fed cuts and the economy avoids recession, small caps could see a meaningful catch-up trade. We see opportunity in quality small caps.",
       "<strong>We're adding value tilts — but staying quality-aware:</strong> Not all value is created equal. We have a preference for profitable value (high ROE, strong balance sheets) over deep/distressed value. Dividend growers in financials, industrials, and energy are our preferred expression."
     ],
-    tickers: ["IWD", "IWF"],
+    tickers: ["DYNF", "BLCR"],
     placeholderChart: {
       type: "line",
       title: "Russell 1000 Growth vs. Russell 1000 Value",
@@ -175,7 +175,7 @@ export const QUESTIONS_DATA = [
       "<strong>We think the US dollar sell-off comes back — and that's a tailwind for international:</strong> The dollar's 2025–2026 strength may be peaking as US growth decelerates and rate differentials narrow. A weaker dollar would amplify international equity returns for US-based investors and ease financial conditions in EM.",
       "<strong>Europe is having a moment:</strong> European defense spending is surging post-Iran conflict, fiscal stimulus is accelerating, and the ECB is cutting rates. STOXX 600 is up ~8% YTD in dollar terms — outpacing the S&P by 14 percentage points."
     ],
-    tickers: ["EEM", "EFA"],
+    tickers: ["IEMG", "IDEF"],
     placeholderChart: {
       type: "bar",
       title: "YTD Returns: US vs. International (USD)",
@@ -184,35 +184,12 @@ export const QUESTIONS_DATA = [
     source: "Source: MSCI, Bloomberg, as of March 2026"
   },
 
-  // ── PORTFOLIO & POSITIONING (1) ────────────────────────────
+  // ── FIXED INCOME (2) ───────────────────────────────────────
   {
     id: 9,
-    section: "portfolio",
-    owner: "JA",
-    label: "QUESTION 09",
-    question: "What are clients and the market telling us?",
-    subtitle: "Advisor polling, fund flows, and positioning signals",
-    bullets: [
-      "<strong>Client sentiment has shifted to cautious:</strong> Our latest advisor poll shows 62% of advisors are positioning defensively — the highest reading since Q4 2022. Cash allocations have ticked up to ~8% of portfolios, well above the 5% long-run average.",
-      "<strong>Fund flows tell a more nuanced story:</strong> While equity fund outflows have accelerated ($45B in March), money market funds have seen massive inflows ($120B+ YTD). But fixed income flows are positive — investors are adding duration selectively, not just hiding in cash.",
-      "<strong>Positioning data suggests room for upside surprise:</strong> Institutional net equity exposure is in the 25th percentile — extremely underweight. Historically, when positioning is this light and the economy avoids recession, the subsequent 12-month equity return averages +18%.",
-      "<strong>The contrarian signal is building:</strong> When advisors are this cautious and positioning is this light, markets have historically surprised to the upside. We're not calling the bottom, but the setup is constructive for patient investors."
-    ],
-    tickers: ["SPY", "BND"],
-    placeholderChart: {
-      type: "bar",
-      title: "Advisor Sentiment & Institutional Positioning",
-      description: "Polling data on advisor allocation stance and institutional net equity exposure percentile"
-    },
-    source: "Source: Internal advisor survey, EPFR, CFTC, as of March 2026"
-  },
-
-  // ── FIXED INCOME (1) ───────────────────────────────────────
-  {
-    id: 10,
     section: "fixedIncome",
     owner: "JA",
-    label: "QUESTION 10",
+    label: "QUESTION 09",
     question: "Where are the best opportunities in fixed income?",
     subtitle: "Short-end preference, spread dynamics, MBS quality, and HALO securities",
     bullets: [
@@ -221,7 +198,7 @@ export const QUESTIONS_DATA = [
       "<strong>This is where HALO securities come in:</strong> Heavy Asset, Low Obsolescence — think CMBS backed by mission-critical infrastructure, data centers, and essential-use properties. CMBS in the HALO category offers spreads of 180–220bp over Treasuries with strong fundamental backing.",
       "<strong>We do NOT like long-end fixed income:</strong> Fiscal risks and duration risk today make the long end unattractive. With $2T+ in annual deficits and Treasury supply overwhelming demand, the term premium is likely to stay elevated. We're underweight 10yr+ maturities. BDMIX has been working as a flexible approach to this environment."
     ],
-    tickers: ["NEAR", "BDMIX"],
+    tickers: ["TOPT", "CMBS"],
     placeholderChart: {
       type: "area",
       title: "Yield Curve & Spread Dynamics",
@@ -229,8 +206,29 @@ export const QUESTIONS_DATA = [
     },
     source: "Source: Bloomberg, ICE BofA, as of March 2026"
   },
+  {
+    id: 10,
+    section: "fixedIncome",
+    owner: "DJ",
+    label: "QUESTION 10",
+    question: "Is private credit a systemic risk?",
+    subtitle: "The $1.7T market, leverage concerns, and what advisors need to know",
+    bullets: [
+      "<strong>Private credit has tripled in five years:</strong> The market has grown from ~$600B in 2020 to ~$1.7T today, fueled by banks retreating from leveraged lending and investors chasing yield. Growth this fast always warrants scrutiny.",
+      "<strong>Default rates are rising from a low base:</strong> Private credit defaults have ticked up to ~3.5% from ~2% a year ago, driven by highly leveraged 2021-vintage deals. Senior secured lending (the bulk of the market) is holding up well — it's the riskier tranches showing stress.",
+      "<strong>Systemic risk is limited — for now:</strong> Unlike the 2008 mortgage market, private credit isn't deeply interconnected with the banking system. But rising correlation between private credit and public high yield suggests the \"diversification\" benefit is overstated.",
+      "<strong>Selectivity is paramount:</strong> We still see value in senior direct lending at 9–11% yields with first-lien protection. But we're avoiding 2021-vintage funds with excessive leverage and recommending investors stress-test their private credit allocations for a recession scenario."
+    ],
+    tickers: ["BINC", "BDMIX"],
+    placeholderChart: {
+      type: "area",
+      title: "Private Credit Market Size & Default Rate",
+      description: "AUM growth of private credit market with overlay of trailing 12-month default rates"
+    },
+    source: "Source: Preqin, PitchBook, LCD, as of March 2026"
+  },
 
-  // ── ALTERNATIVES (1) ───────────────────────────────────────
+  // ── PORTFOLIO & ALTERNATIVES (3) ───────────────────────────
   {
     id: 11,
     section: "portfolio",
@@ -244,7 +242,7 @@ export const QUESTIONS_DATA = [
       "<strong>Multi-strategy funds are showing their value:</strong> Diversified hedge fund strategies are delivering mid-single-digit returns with low correlation to both equities and fixed income. The Sharpe ratio improvement from a 10–15% liquid alts allocation has been significant in 2026.",
       "<strong>This is not a tactical call — it's structural:</strong> In a world of geopolitical risk, sticky inflation, and correlated traditional assets, liquid alternatives deserve a permanent 10–20% portfolio allocation. The performance this year validates the thesis."
     ],
-    tickers: ["DBMF", "BTAL"],
+    tickers: ["IALT", "DYNF"],
     placeholderChart: {
       type: "bar",
       title: "YTD Performance: Liquid Alts vs. Traditional Assets",
@@ -252,8 +250,6 @@ export const QUESTIONS_DATA = [
     },
     source: "Source: Bloomberg, HFR, Morningstar, as of March 2026"
   },
-
-  // ── MULTI-ASSET (1) ────────────────────────────────────────
   {
     id: 12,
     section: "portfolio",
@@ -267,12 +263,33 @@ export const QUESTIONS_DATA = [
       "<strong>Gold's decline is counter-intuitive but explainable:</strong> Gold typically rallies during geopolitical crises, but this time rising real rates and dollar strength have overwhelmed the safe-haven bid. We view this as temporary — once the Fed signals accommodation, gold should resume its structural uptrend.",
       "<strong>The takeaway for portfolios:</strong> Traditional diversification isn't broken — it's being stress-tested. These episodes historically resolve within 1–2 quarters, and the subsequent 12-month returns across all three asset classes are typically strong. This is a reason to rebalance, not to panic."
     ],
-    tickers: ["GLD", "AOK"],
+    tickers: ["IALT", "TIP"],
     placeholderChart: {
       type: "line",
       title: "YTD Drawdown: S&P 500, Agg Bond, Gold",
       description: "Cumulative return paths for equities, fixed income, and gold showing the triple drawdown"
     },
     source: "Source: Bloomberg, World Gold Council, as of March 2026"
+  },
+  {
+    id: 13,
+    section: "portfolio",
+    owner: "JA",
+    label: "QUESTION 13",
+    question: "What are clients and the market telling us?",
+    subtitle: "Advisor polling, fund flows, and positioning signals",
+    bullets: [
+      "<strong>Client sentiment has shifted to cautious:</strong> Our latest advisor poll shows 62% of advisors are positioning defensively — the highest reading since Q4 2022. Cash allocations have ticked up to ~8% of portfolios, well above the 5% long-run average.",
+      "<strong>Fund flows tell a more nuanced story:</strong> While equity fund outflows have accelerated ($45B in March), money market funds have seen massive inflows ($120B+ YTD). But fixed income flows are positive — investors are adding duration selectively, not just hiding in cash.",
+      "<strong>Positioning data suggests room for upside surprise:</strong> Institutional net equity exposure is in the 25th percentile — extremely underweight. Historically, when positioning is this light and the economy avoids recession, the subsequent 12-month equity return averages +18%.",
+      "<strong>The contrarian signal is building:</strong> When advisors are this cautious and positioning is this light, markets have historically surprised to the upside. We're not calling the bottom, but the setup is constructive for patient investors."
+    ],
+    tickers: ["BLCR", "DYNF"],
+    placeholderChart: {
+      type: "bar",
+      title: "Advisor Sentiment & Institutional Positioning",
+      description: "Polling data on advisor allocation stance and institutional net equity exposure percentile"
+    },
+    source: "Source: Internal advisor survey, EPFR, CFTC, as of March 2026"
   },
 ];
