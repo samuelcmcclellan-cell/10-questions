@@ -104,7 +104,7 @@ export const QUESTIONS_DATA = [
     question: "Should I be concerned about valuations?",
     subtitle: "P/E compression, earnings strength, and the rates connection",
     bullets: [
-      "<strong>US equities can be cheaper than they have been:</strong> The S&P 500 is trading at a lower forward P/E than its 5-year average. Tech is also trading below its 5-year average multiple. The post-correction reset has brought valuations back to more reasonable levels.",
+      "<strong>US equities are historically cheap:</strong> The S&P 500 is trading at a lower forward P/E than its 5-year average. Tech is also trading below its 5-year average multiple. The post-correction reset has brought valuations back to cheap levels.",
       "<strong>We still see earnings strength:</strong> S&P 500 EPS estimates for 2026 remain in the $270+ range. Earnings revisions have been resilient despite the oil shock — energy and industrials are seeing upgrades that offset tech downgrades.",
       "<strong>The rates view matters here:</strong> The market is pricing in a higher-for-longer rate environment, but we think we'll see at least one cut this year. If the Fed moves, the impact on rates — and the re-rating potential for equities — is meaningful.",
       "<strong>Our view: selectivity over broad beta.</strong> Where we see opportunity is in AI-exposed names and names exposed to reshoring — industrials, materials, and areas where the AI buildout is impacting earnings."
