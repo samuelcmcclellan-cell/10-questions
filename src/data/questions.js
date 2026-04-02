@@ -60,10 +60,10 @@ export const QUESTIONS_DATA = [
     question: "Is AI leading to higher unemployment?",
     subtitle: "AI is driving labor disruption — both creating and replacing jobs",
     bullets: [
-      "<strong>AI is both destroying and creating jobs — the net math is positive but uneven:</strong> AI-attributed tech layoffs hit ~78K in the first half of 2025, and entry-level postings have declined ~35% since 2023. But the AI boom is simultaneously generating massive employment in data center construction, hardware, and AI development itself — with projections of 170M new roles globally by 2030 vs. 92M displaced.",
-      "<strong>The trades boom is real:</strong> Demand for skilled trades is growing 3x faster than professional roles. The data center buildout alone needs ~300K new electricians over the next decade, with salaries climbing 32% above non-data-center construction. Demand for robotics technicians is up 107%, HVAC engineers up 67%, and construction roles up 30% since late 2022. Jensen Huang called this \"the largest infrastructure build-out in human history.\"",
-      "<strong>Software engineering is being reshaped, not eliminated:</strong> 92% of developers now use AI coding tools, and junior roles are shrinking. But AI engineer demand has surged — prompt engineer postings up 136% this year, average AI engineer salaries at $206K (up $50K YoY), and AI-related job openings up 25% YoY. The role is evolving from writing code to orchestrating AI systems.",
-      "<strong>Immigration and a low hire-and-fire environment are shaping the backdrop:</strong> Net immigration has slowed sharply, tightening the labor pool in agriculture, hospitality, and construction. Meanwhile, both hiring and layoff rates are historically subdued — a \"frozen\" labor market where unemployment stays low (~4.1%) but job mobility is declining. The displacement is real but sector-specific, not economy-wide."
+      "<strong>Yes, AI is displacing jobs — but it's creating more than it destroys:</strong> Entry-level postings are down ~35% since 2023 and AI-attributed tech layoffs hit ~78K in H1 2025. We expect displacement to continue. But the AI boom is simultaneously driving massive hiring in data centers, hardware, and AI development — 170M new roles projected globally by 2030 vs. 92M displaced. Net positive, but uneven.",
+      "<strong>The trades boom is real:</strong> Skilled trades demand is growing 3x faster than professional roles. The data center buildout needs ~300K new electricians over the next decade, with salaries 32% above non-data-center construction. Robotics technicians up 107%, HVAC engineers up 67%, construction roles up 30% since late 2022.",
+      "<strong>Software is getting cheaper — that means more demand, not less:</strong> AI is making software dramatically cheaper to produce, and historically when something gets cheaper demand explodes (Jevons Paradox). The role is shifting from writing code to architecting and orchestrating AI systems. AI engineer salaries are at $206K (up $50K YoY).",
+      "<strong>Labor market backdrop: frozen, not broken.</strong> Both hiring and layoff rates are historically subdued — unemployment sits at ~4.1% but job mobility is declining. Immigration tightening is squeezing agriculture, hospitality, and construction. Displacement is real but sector-specific, not economy-wide."
     ],
     tickers: ["BAI", "QUAL"],
     placeholderChart: {
@@ -104,10 +104,10 @@ export const QUESTIONS_DATA = [
     question: "Should I be concerned about valuations?",
     subtitle: "P/E compression, earnings strength, and the rates connection",
     bullets: [
-      "<strong>US equities are historically cheap:</strong> The S&P 500 is trading at a lower forward P/E than its 5-year average. Tech is also trading below its 5-year average multiple. The post-correction reset has brought valuations back to cheap levels.",
-      "<strong>We still see earnings strength:</strong> S&P 500 EPS estimates for 2026 remain in the $270+ range. Earnings revisions have been resilient despite the oil shock — energy and industrials are seeing upgrades that offset tech downgrades.",
-      "<strong>The rates view matters here:</strong> The market is pricing in a higher-for-longer rate environment, but we think we'll see at least one cut this year. If the Fed moves, the impact on rates — and the re-rating potential for equities — is meaningful.",
-      "<strong>Our view: selectivity over broad beta.</strong> Where we see opportunity is in AI-exposed names and names exposed to reshoring — industrials, materials, and areas where the AI buildout is impacting earnings."
+      "<strong>US equities are historically cheap:</strong> The S&P 500 trades at a lower forward P/E than its 5-year average, and tech is below its 5-year average multiple. Semiconductors are now trading at a lower P/E than consumer staples. The post-correction reset has brought valuations back to genuinely cheap levels.",
+      "<strong>Earnings strength is broad-based:</strong> S&P 500 EPS estimates for 2026 remain in the $270+ range. Energy and industrials are seeing upgrades, and tech — particularly semiconductors — is posting strong revisions. Earnings resilience is wider than the market is pricing.",
+      "<strong>The rates view matters here:</strong> The market is pricing in higher-for-longer, but we think we'll see at least one cut this year. If the Fed moves, the re-rating potential for equities is meaningful.",
+      "<strong>Our view: selectivity over broad beta.</strong> We see opportunity in AI-exposed names and reshoring beneficiaries — industrials, materials, and areas where the technology buildout is driving earnings."
     ],
     tickers: ["BLCR", "QUAL"],
     placeholderChart: {
