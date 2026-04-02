@@ -1,5 +1,6 @@
 import { SECTIONS } from '../data/questions';
 import PlaceholderChart from './PlaceholderChart';
+import ForwardPEChart from './ForwardPEChart';
 
 export default function QuestionSlide({ data, currentIndex, total, isVisible }) {
   const section = SECTIONS[data.section];
@@ -48,12 +49,16 @@ export default function QuestionSlide({ data, currentIndex, total, isVisible }) 
         {/* Placeholder Chart — compact on mobile */}
         <div className="w-full md:w-[55%] flex-shrink-0 md:flex-shrink md:flex-initial md:h-full flex flex-col gap-2 md:gap-3">
           <div className="h-36 sm:h-44 md:h-auto md:flex-1 min-h-0">
-            <PlaceholderChart
-              type={data.placeholderChart.type}
-              title={data.placeholderChart.title}
-              description={data.placeholderChart.description}
-              sectionColor={section.color}
-            />
+            {data.id === 5 ? (
+              <ForwardPEChart />
+            ) : (
+              <PlaceholderChart
+                type={data.placeholderChart.type}
+                title={data.placeholderChart.title}
+                description={data.placeholderChart.description}
+                sectionColor={section.color}
+              />
+            )}
           </div>
 
           {/* ETF Ticker Placeholders */}

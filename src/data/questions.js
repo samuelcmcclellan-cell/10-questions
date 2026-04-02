@@ -19,7 +19,7 @@ export const QUESTIONS_DATA = [
       "<strong>Energy security is now a first-order economic risk:</strong> Iran's disruption of the Strait of Hormuz has taken ~10 million barrels/day offline — 21% of global supply. Brent surged past $120/bbl before settling near $108–113. Energy independence and infrastructure resilience are no longer hypothetical concerns.",
       "<strong>The growth impact is real but manageable:</strong> Every $10/bbl sustained increase in oil historically shaves 0.1–0.2% off GDP. Combined with tariff headwinds, GDPNow has moved to sub-2% for Q2. The drag is significant, but consumer balance sheets and labor markets remain supportive.",
       "<strong>We don't think we're headed to recession — but there will be lasting impacts:</strong> The war's effects on supply chains, defense spending, and fiscal policy will persist well beyond any ceasefire. Defense budgets are locked in for years, and energy infrastructure investment is accelerating across the board.",
-      "<strong>Position for stagflationary risk:</strong> We see opportunity in energy infrastructure and commodity baskets. The oil-inflation feedback loop is delaying the Fed's easing cycle, creating a prolonged environment where real assets and defense-linked equities can outperform."
+      "<strong>Energy security is now a structural investment theme:</strong> The conflict has accelerated a bipartisan shift toward energy independence, grid hardening, and domestic production. Companies enabling defense infrastructure, resilient power systems, and onshore energy supply chains have durable tailwinds that will outlast any single conflict. This is a multi-year capex cycle, not a trade."
     ],
     tickers: ["IDEF", "POWR"],
     placeholderChart: {
@@ -38,11 +38,11 @@ export const QUESTIONS_DATA = [
     subtitle: "Commodity pass-through, CPI trajectory, TIPS, and why the Fed is trapped",
     bullets: [
       "<strong>Oil ripples through everything:</strong> Crude is up ~50% YTD, but the inflationary transmission goes beyond gasoline — into fertilizers, plastics, freight, and chemicals — with a 3–6 month lag.",
-      "<strong>February CPI was 2.4% — but March will be sharply higher:</strong> Energy services were already +6.3% YoY and natural gas +10.9%. The March print is expected above 3%. TIPS breakevens have widened meaningfully, and we see value in inflation-linked bonds as a core portfolio hedge — not a standalone call, but a structural allocation.",
+      "<strong>Oil risk premia are keeping inflation expectations sticky:</strong> Brent still carries a meaningful geopolitical premium — current prices sit well above fundamental fair value. Five-year TIPS breakevens have widened to ~2.55%, above the 10-year at ~2.34%, signaling the market expects near-term inflation pressure to persist. That inverted breakeven structure supports an allocation to short- and intermediate-term TIPS as a structural inflation hedge.",
       "<strong>Commodities are spiking in tandem:</strong> Aluminum at a 4-year high, one-third of global helium offline, food prices +3.1% YoY before the shock hit. The breadth of the commodity move reinforces the case for inflation protection.",
       "<strong>The Fed can't cut into a supply shock:</strong> The FOMC held at 3.50–3.75% and is trapped — oil acts as both a growth drag and inflation accelerant. The risk of zero cuts in 2026 is rising. TIPS and flexible income strategies are well-positioned for this environment."
     ],
-    tickers: ["TIP", "BINC"],
+    tickers: ["TIP", "STIP"],
     placeholderChart: {
       type: "dual-axis-line",
       title: "Oil Price vs. CPI (YoY)",
@@ -60,10 +60,10 @@ export const QUESTIONS_DATA = [
     question: "Is AI leading to higher unemployment?",
     subtitle: "AI is driving labor disruption — both creating and replacing jobs",
     bullets: [
-      "<strong>Yes, AI is displacing jobs — but it's creating more than it destroys:</strong> Entry-level postings are down ~35% since 2023 and AI-attributed tech layoffs hit ~78K in H1 2025. We expect displacement to continue. But the AI boom is simultaneously driving massive hiring in data centers, hardware, and AI development — 170M new roles projected globally by 2030 vs. 92M displaced. Net positive, but uneven.",
-      "<strong>The trades boom is real:</strong> Skilled trades demand is growing 3x faster than professional roles. The data center buildout needs ~300K new electricians over the next decade, with salaries 32% above non-data-center construction. Robotics technicians up 107%, HVAC engineers up 67%, construction roles up 30% since late 2022.",
-      "<strong>Software is getting cheaper — that means more demand, not less:</strong> AI is making software dramatically cheaper to produce, and historically when something gets cheaper demand explodes (Jevons Paradox). The role is shifting from writing code to architecting and orchestrating AI systems. AI engineer salaries are at $206K (up $50K YoY).",
-      "<strong>Labor market backdrop: frozen, not broken.</strong> Both hiring and layoff rates are historically subdued — unemployment sits at ~4.1% but job mobility is declining. Immigration tightening is squeezing agriculture, hospitality, and construction. Displacement is real but sector-specific, not economy-wide."
+      "<strong>AI is displacing jobs — but creating more than it destroys:</strong> Entry-level postings are down ~35% since 2023 and AI-attributed layoffs hit ~78K in H1 2025. But the AI boom is driving massive hiring in data centers, hardware, and AI development.",
+      "<strong>The trades boom is real:</strong> Skilled trades demand is growing 3x faster than professional roles. The data center buildout needs ~300K new electricians over the next decade, with salaries 32% above baseline construction.",
+      "<strong>Software is getting cheaper — that means more demand:</strong> Historically when something gets cheaper, demand explodes (Jevons Paradox). The role is shifting from writing code to orchestrating AI systems. AI engineer salaries are at $206K, up $50K YoY.",
+      "<strong>Labor market: frozen, not broken.</strong> Unemployment sits at ~4.1% but job mobility is declining. Displacement is real but sector-specific, not economy-wide."
     ],
     tickers: ["BAI", "QUAL"],
     placeholderChart: {
@@ -86,7 +86,7 @@ export const QUESTIONS_DATA = [
       "<strong>Key policy overhang: tariffs and tax extensions:</strong> The 2025 tax cuts expire in 2027, and the campaign will center on whether to extend them. Tariff policy is also at stake — any shift in trade stance could move sectors dramatically.",
       "<strong>Defense and energy spending are bipartisan:</strong> Regardless of outcome, the Iran conflict has locked in elevated defense budgets for years. Energy infrastructure spending is similarly supported across the aisle — these are durable secular themes."
     ],
-    tickers: ["IDEF", "BLCR"],
+    tickers: ["BINC", "BLCR"],
     placeholderChart: {
       type: "line",
       title: "S&P 500 Performance in Midterm Years",
