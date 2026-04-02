@@ -58,20 +58,20 @@ export const QUESTIONS_DATA = [
     owner: "S",
     label: "QUESTION 03",
     question: "Is AI leading to higher unemployment?",
-    subtitle: "AI is driving labor disruption — both creating and replacing jobs",
+    subtitle: "Immigration trends and AI are reshaping labor supply and demand — and the surface calm hides deeper shifts",
     bullets: [
-      "<strong>AI is displacing jobs — but creating more than it destroys:</strong> Entry-level postings are down ~35% since 2023 and AI-attributed layoffs hit ~78K in H1 2025. But the AI boom is driving massive hiring in data centers, hardware, and AI development.",
-      "<strong>The trades boom is real:</strong> Skilled trades demand is growing 3x faster than professional roles. The data center buildout needs ~300K new electricians over the next decade, with salaries 32% above baseline construction.",
-      "<strong>Software is getting cheaper — that means more demand:</strong> Historically when something gets cheaper, demand explodes (Jevons Paradox). The role is shifting from writing code to orchestrating AI systems. AI engineer salaries are at $206K, up $50K YoY.",
-      "<strong>Labor market: frozen, not broken.</strong> Unemployment sits at ~4.1% but job mobility is declining. Displacement is real but sector-specific, not economy-wide."
+      "<strong>Low-hire, low-fire — a tenuous equilibrium:</strong> The labor market looks stable on the surface — unemployment is around 4.1% and hasn't spiked — but hiring rates and quit rates are both near multi-year lows. Workers aren't getting laid off, but they're not getting hired either. This isn't a healthy market — it's a frozen one.",
+      "<strong>Immigration and AI are reshaping labor supply and demand simultaneously:</strong> Immigration policy shifts are tightening labor supply in sectors like agriculture, construction, and hospitality, while AI is compressing demand for entry-level knowledge work. These forces are hitting different parts of the market at the same time, creating pressure on both ends of the skill spectrum.",
+      "<strong>A lot is happening under the surface:</strong> Unemployment isn't rising, but that masks real churn — sector-specific displacement, declining job mobility, and a growing mismatch between where workers are and where demand is heading. The equilibrium is fragile, and a single macro shock could tip it.",
+      "<strong>We don't think the Fed hikes in this environment:</strong> Given how fragile parts of the labor market appear — especially in rate-sensitive sectors like housing and commercial construction — we believe the Fed stays on hold. Tightening into a market that's only superficially stable risks tipping the balance."
     ],
-    tickers: ["BAI", "QUAL"],
+    tickers: [],
     placeholderChart: {
-      type: "bar",
-      title: "AI Job Impact: Displacement vs. Creation by Sector",
-      description: "Net job changes across trades, AI/tech, healthcare, and traditional software roles"
+      type: "line",
+      title: "JOLTS Hires Rate & Quits Rate (2019–Present)",
+      description: "Monthly hires and quits rates showing the decline in labor market dynamism despite low unemployment"
     },
-    source: "Source: BLS, Randstad, ITIF, Challenger Gray & Christmas, as of March 2026"
+    source: "Source: BLS, JOLTS, Atlanta Fed Wage Tracker, CBO, as of March 2026"
   },
   {
     id: 4,
