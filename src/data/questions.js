@@ -125,7 +125,7 @@ export const QUESTIONS_DATA = [
     question: "What themes should I be watching?",
     subtitle: "AI evolution, energy security, and the next wave of thematic investing",
     bullets: [
-      "<strong>We still see the AI theme — but the winners are shifting:</strong> Phase 1 (infrastructure — chips, cloud) rewarded Nvidia and hyperscalers. Phase 2 (deployment — enterprise software, automation) is where returns shift to companies using AI to drive margins, not just building the tools.",
+      "<strong>We still see the AI theme — but the winners are shifting:</strong> The infrastructure build (chips, cloud) rewarded Nvidia and hyperscalers. Returns now shift to companies using AI to drive margins, not just building the tools.",
       "<strong>Energy security has emerged as a major new theme:</strong> The Iran conflict has made energy independence a national priority. Companies across the energy value chain — from upstream producers to midstream infrastructure to grid modernization — are benefiting from bipartisan policy support and accelerating capital flows.",
       "<strong>The intersection of AI and energy is compelling:</strong> AI data centers are driving massive power demand growth. Companies providing power generation, grid infrastructure, and cooling solutions for AI compute are seeing secular tailwinds from both themes simultaneously.",
       "<strong>We see opportunity in the \"picks and shovels\" layer:</strong> Data centers, networking, power infrastructure, and enterprise platforms — where cash flow and margins matter more than TAM narratives."
@@ -146,10 +146,10 @@ export const QUESTIONS_DATA = [
     question: "Growth vs. Value: which style should I lean into?",
     subtitle: "Russell 1000 divergence, large cap vs. small cap, and factor dynamics",
     bullets: [
-      "<strong>Value has outperformed growth by ~800bp YTD:</strong> The Russell 1000 Value is roughly flat while Growth is down ~8%. Energy, financials, and healthcare are carrying value; tech and consumer discretionary are dragging growth.",
-      "<strong>What's driving the divergence:</strong> Rising rates mechanically favor value — higher discount rates compress the present value of long-duration growth cash flows more than near-term value cash flows. The oil shock amplifies this by boosting energy and industrials (value) while pressuring tech margins (growth).",
-      "<strong>Large cap vs. small cap — we're getting more convicted:</strong> Small caps have underperformed large caps significantly, but valuations are at extreme discounts. If the Fed cuts and the economy avoids recession, small caps could see a meaningful catch-up trade. We see opportunity in quality small caps.",
-      "<strong>We're adding value tilts — but staying quality-aware:</strong> Not all value is created equal. We have a preference for profitable value (high ROE, strong balance sheets) over deep/distressed value. Dividend growers in financials, industrials, and energy are our preferred expression."
+      "<strong>Value has outperformed growth by ~800bp YTD:</strong> Russell 1000 Value is roughly flat; Growth is down ~8%. Energy, financials, and healthcare carrying value; tech and consumer discretionary dragging growth.",
+      "<strong>What's driving the divergence:</strong> Rising rates compress long-duration growth cash flows more than near-term value. The oil shock amplifies this — boosting energy and industrials (value) while pressuring tech margins (growth).",
+      "<strong>Large cap vs. small cap — getting more convicted:</strong> Small caps are at extreme valuation discounts to large caps. If the Fed cuts and we avoid recession, quality small caps could see a meaningful catch-up trade.",
+      "<strong>Adding value tilts — staying quality-aware:</strong> Profitable value (high ROE, strong balance sheets) over deep/distressed value. Dividend growers in financials, industrials, and energy are our preferred expression."
     ],
     tickers: ["DYNF", "BLCR"],
     placeholderChart: {
@@ -169,12 +169,12 @@ export const QUESTIONS_DATA = [
     question: "Why allocate to international equities?",
     subtitle: "EM opportunity, dollar dynamics, and the valuation case",
     bullets: [
-      "<strong>Most investors are underweight EM equities:</strong> The average US-based portfolio has just 5–7% in emerging markets vs. EM's ~12% share of global market cap. At current valuations — MSCI EM at ~11x forward earnings — the risk/reward setup is compelling.",
-      "<strong>We like some of the prospects of the EM trade:</strong> Brazil, Saudi Arabia, and Indonesia are direct beneficiaries of higher oil and commodity prices. EM earnings revisions are turning positive for the first time since 2021, and fiscal positions are stronger than in prior commodity cycles.",
-      "<strong>We think the US dollar sell-off comes back — and that's a tailwind for international:</strong> The dollar's 2025–2026 strength may be peaking as US growth decelerates and rate differentials narrow. A weaker dollar would amplify international equity returns for US-based investors and ease financial conditions in EM.",
-      "<strong>Europe is having a moment:</strong> European defense spending is surging post-Iran conflict, fiscal stimulus is accelerating, and the ECB is cutting rates. STOXX 600 is up ~8% YTD in dollar terms — outpacing the S&P by 14 percentage points."
+      "<strong>Most investors are underweight EM:</strong> Average US portfolio has 5–7% in EM vs. ~12% of global market cap. MSCI EM at ~11x forward earnings — risk/reward is compelling.",
+      "<strong>The EM commodity trade is working:</strong> Brazil, Saudi Arabia, and Indonesia are direct beneficiaries of higher oil and commodity prices. EM earnings revisions are turning positive for the first time since 2021, with stronger fiscal positions than prior cycles.",
+      "<strong>Dollar weakness is a tailwind:</strong> The dollar's 2025–2026 strength may be peaking as US growth decelerates and rate differentials narrow. A weaker dollar amplifies international returns for US-based investors.",
+      "<strong>Europe is having a moment:</strong> Defense spending surging post-Iran, fiscal stimulus accelerating, ECB cutting rates. STOXX 600 up ~8% YTD in dollar terms — outpacing the S&P by 14 percentage points."
     ],
-    tickers: ["IEMG", "IDEF"],
+    tickers: ["IEMG", "EWY"],
     placeholderChart: {
       type: "bar",
       title: "YTD Returns: US vs. International (USD)",
@@ -192,12 +192,12 @@ export const QUESTIONS_DATA = [
     question: "Where are the best opportunities in fixed income?",
     subtitle: "Short-end preference, spread dynamics, MBS quality, and HALO securities",
     bullets: [
-      "<strong>We have a preference for the short end of the curve:</strong> The market is pricing in fewer rate moves than we anticipate. If we're right that the Fed cuts at least once, the front end offers both carry and capital appreciation potential. 1–3 year investment-grade paper yields 5%+ with minimal duration risk.",
-      "<strong>Spreads are widening — dial up quality:</strong> IG credit spreads have moved from 90bp to 130bp, and HY is at 420bp. We see opportunity in quality fixed income — this is where you get paid to own bonds without reaching for risk. MBS offers an attractive quality profile with agency backing and a yield pick over Treasuries.",
-      "<strong>This is where HALO securities come in:</strong> Heavy Asset, Low Obsolescence — think CMBS backed by mission-critical infrastructure, data centers, and essential-use properties. CMBS in the HALO category offers spreads of 180–220bp over Treasuries with strong fundamental backing.",
-      "<strong>We do NOT like long-end fixed income:</strong> Fiscal risks and duration risk today make the long end unattractive. With $2T+ in annual deficits and Treasury supply overwhelming demand, the term premium is likely to stay elevated. We're underweight 10yr+ maturities. BDMIX has been working as a flexible approach to this environment."
+      "<strong>Favor the short end:</strong> The market is pricing in fewer rate moves than we expect. 1–3 year IG paper yields 5%+ with minimal duration risk — if the Fed cuts, the front end offers carry and capital appreciation.",
+      "<strong>Spreads widening — dial up quality:</strong> IG spreads at 130bp, HY at 420bp. Quality fixed income pays you to own bonds without reaching for risk. MBS offers agency backing and a yield pick over Treasuries.",
+      "<strong>HALO securities:</strong> Heavy Asset, Low Obsolescence — CMBS backed by data centers, mission-critical infrastructure, and essential-use properties. Spreads of 180–220bp over Treasuries with strong fundamentals.",
+      "<strong>Avoid the long end:</strong> $2T+ annual deficits and Treasury supply keep the term premium elevated. We're underweight 10yr+ maturities."
     ],
-    tickers: ["TOPT", "CMBS"],
+    tickers: ["CLOA", "CMBS"],
     placeholderChart: {
       type: "area",
       title: "Yield Curve & Spread Dynamics",
@@ -218,7 +218,7 @@ export const QUESTIONS_DATA = [
       "<strong>Systemic risk is limited — for now:</strong> Unlike the 2008 mortgage market, private credit isn't deeply interconnected with the banking system. But rising correlation between private credit and public high yield suggests the \"diversification\" benefit is overstated.",
       "<strong>Selectivity is paramount:</strong> We still see value in senior direct lending at 9–11% yields with first-lien protection. But we're avoiding 2021-vintage funds with excessive leverage and recommending investors stress-test their private credit allocations for a recession scenario."
     ],
-    tickers: ["BINC", "BDMIX"],
+    tickers: [],
     placeholderChart: {
       type: "area",
       title: "Private Credit Market Size & Default Rate",
@@ -236,12 +236,12 @@ export const QUESTIONS_DATA = [
     question: "What has worked as a diversifier this year?",
     subtitle: "Liquid alternatives strategies and strong performance in a tough market",
     bullets: [
-      "<strong>Liquid alts have earned their allocation this year:</strong> Managed futures, global macro, and multi-strategy hedge funds have delivered strong positive returns in a quarter where stocks, bonds, and gold are all struggling. This is exactly the environment they're designed for.",
-      "<strong>Managed futures have been the standout:</strong> CTA strategies are up ~8–12% YTD, capturing the oil spike, dollar moves, and rate volatility. The trend-following approach thrives in regime changes — and we're in one.",
-      "<strong>Multi-strategy funds are showing their value:</strong> Diversified hedge fund strategies are delivering mid-single-digit returns with low correlation to both equities and fixed income. The Sharpe ratio improvement from a 10–15% liquid alts allocation has been significant in 2026.",
-      "<strong>This is not a tactical call — it's structural:</strong> In a world of geopolitical risk, sticky inflation, and correlated traditional assets, liquid alternatives deserve a permanent 10–20% portfolio allocation. The performance this year validates the thesis."
+      "<strong>Bonds have failed as a diversifier:</strong> Stocks and bonds are positively correlated this year — when equities sold off, fixed income offered no cushion. In a supply-driven inflation shock, both assets move together. The 60/40 assumption is broken in this regime.",
+      "<strong>Gold is unreliable:</strong> Gold sometimes works as a hedge, sometimes doesn't. Rising real rates and dollar strength have overwhelmed the safe-haven bid this quarter. You can't count on gold when you need it most.",
+      "<strong>Global market-neutral strategies are the answer:</strong> Strategies like BDMIX deliver uncorrelated returns by design — they're not dependent on rates, oil, or equity direction. CTA and macro strategies are up ~8–12% YTD, capturing volatility across asset classes. This is what true diversification looks like.",
+      "<strong>This is structural, not tactical:</strong> With geopolitical risk elevated, inflation sticky, and traditional diversifiers unreliable, liquid alternatives deserve a permanent 10–20% portfolio allocation."
     ],
-    tickers: ["IALT", "DYNF"],
+    tickers: ["IALT", "BDMIX"],
     placeholderChart: {
       type: "bar",
       title: "YTD Performance: Liquid Alts vs. Traditional Assets",
