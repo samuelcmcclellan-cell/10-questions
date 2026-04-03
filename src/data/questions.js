@@ -145,14 +145,14 @@ export const QUESTIONS_DATA = [
     owner: "DJ",
     label: "QUESTION 07",
     question: "Growth vs. Value: which style should I lean into?",
-    subtitle: "Russell 1000 divergence, large cap vs. small cap, and factor dynamics",
+    subtitle: "Moving beyond style boxes — factors, themes, and where earnings growth lives",
     bullets: [
-      "<strong>Value has outperformed growth by ~800bp YTD:</strong> Russell 1000 Value is roughly flat; Growth is down ~8%. Energy, financials, and healthcare carrying value; tech and consumer discretionary dragging growth.",
-      "<strong>What's driving the divergence:</strong> Rising rates compress long-duration growth cash flows more than near-term value. The oil shock amplifies this — boosting energy and industrials (value) while pressuring tech margins (growth).",
-      "<strong>Large cap vs. small cap — getting more convicted:</strong> Small caps are at extreme valuation discounts to large caps. If the Fed cuts and we avoid recession, quality small caps could see a meaningful catch-up trade.",
-      "<strong>Adding value tilts — staying quality-aware:</strong> Profitable value (high ROE, strong balance sheets) over deep/distressed value. Dividend growers in financials, industrials, and energy are our preferred expression."
+      "<strong>Growth vs. value is an ancient construct — we need a modern lens:</strong> The traditional style box worked in a world of stable rate regimes and sector-driven return differences. Today, the lines are blurred — many of the best-performing companies defy neat categorization. We think factor-based and thematic approaches are a more precise way to access the characteristics that actually drive returns: quality, momentum, and secular growth.",
+      "<strong>We like accessing favorable areas through factors and themes:</strong> Rather than making a binary growth-or-value call, we prefer quality factors — high ROE, strong balance sheets, stable earnings — and thematic exposures like AI infrastructure and energy security. QUAL and DYNF give us targeted access to the characteristics we want without the dead weight that comes with broad style indices.",
+      "<strong>Large cap over small cap — conviction is increasing:</strong> Large caps offer superior earnings visibility, stronger balance sheets, and dominant positioning in secular themes like AI and energy infrastructure. Small caps face a tougher financing environment with rates elevated and bank lending standards tight. The valuation discount in small caps is real, but it reflects genuine fundamental headwinds — we're not chasing it.",
+      "<strong>We lean growth — that's where the earnings power is:</strong> S&P 500 earnings growth is being driven disproportionately by growth-oriented sectors: technology, communication services, and AI-adjacent industrials. Value sectors like energy and financials have near-term tailwinds, but the durable, compounding earnings streams sit in growth. We want to own companies growing earnings at 15%+ with pricing power and margin resilience — and those skew growth."
     ],
-    tickers: ["DYNF", "BLCR"],
+    tickers: ["QUAL", "DYNF"],
     placeholderChart: {
       type: "line",
       title: "Russell 1000 Growth vs. Russell 1000 Value",
@@ -168,12 +168,12 @@ export const QUESTIONS_DATA = [
     owner: "O",
     label: "QUESTION 08",
     question: "Why allocate to international equities?",
-    subtitle: "EM opportunity, dollar dynamics, and the valuation case",
+    subtitle: "EM opportunity, Asia's AI supply chain, and the valuation case",
     bullets: [
-      "<strong>Most investors are underweight EM:</strong> Average US portfolio has 5–7% in EM vs. ~12% of global market cap. MSCI EM at ~11x forward earnings — risk/reward is compelling.",
-      "<strong>The EM commodity trade is working:</strong> Brazil, Saudi Arabia, and Indonesia are direct beneficiaries of higher oil and commodity prices. EM earnings revisions are turning positive for the first time since 2021, with stronger fiscal positions than prior cycles.",
-      "<strong>Dollar weakness is a tailwind:</strong> The dollar's 2025–2026 strength may be peaking as US growth decelerates and rate differentials narrow. A weaker dollar amplifies international returns for US-based investors.",
-      "<strong>Europe is having a moment:</strong> Defense spending surging post-Iran, fiscal stimulus accelerating, ECB cutting rates. STOXX 600 up ~8% YTD in dollar terms — outpacing the S&P by 14 percentage points."
+      "<strong>Most investors are underweight EM — and the opportunity is compelling:</strong> The average US portfolio has 5–7% in EM vs. ~12% of global market cap. MSCI EM trades at ~11x forward earnings — a 40%+ discount to the S&P 500. With earnings revisions turning positive for the first time since 2021, the risk/reward setup is attractive.",
+      "<strong>Asia EM is the AI supply chain:</strong> Taiwan (TSMC), South Korea (Samsung, SK Hynix), and India (IT services, engineering talent) are critical nodes in the global AI buildout. These aren't speculative frontier markets — they're essential infrastructure providers for the most important technology cycle in decades. Korea and Taiwan alone account for over 80% of advanced semiconductor manufacturing.",
+      "<strong>Dollar weakness is a tailwind:</strong> The dollar's 2025–2026 strength may be peaking as US growth decelerates and rate differentials narrow. A weaker dollar amplifies EM returns for US-based investors and eases financial conditions for EM corporates with dollar-denominated debt — a double benefit.",
+      "<strong>Commodity exporters add diversification within EM:</strong> Brazil, Saudi Arabia, and Indonesia are direct beneficiaries of elevated oil and commodity prices, with stronger fiscal positions than in prior cycles. Combined with the Asia tech exposure, EM offers a barbell of growth and resource exposure that developed international markets — particularly low-growth Europe — simply can't match."
     ],
     tickers: ["IEMG", "EWY"],
     placeholderChart: {
@@ -277,14 +277,14 @@ export const QUESTIONS_DATA = [
     owner: "JA",
     label: "QUESTION 13",
     question: "What are clients and the market telling us?",
-    subtitle: "Advisor polling, fund flows, and positioning signals",
+    subtitle: "Advisor polling, fund flows, and the shift toward international and alternatives",
     bullets: [
-      "<strong>Client sentiment has shifted to cautious:</strong> Our latest advisor poll shows 62% of advisors are positioning defensively — the highest reading since Q4 2022. Cash allocations have ticked up to ~8% of portfolios, well above the 5% long-run average.",
-      "<strong>Fund flows tell a more nuanced story:</strong> While equity fund outflows have accelerated ($45B in March), money market funds have seen massive inflows ($120B+ YTD). But fixed income flows are positive — investors are adding duration selectively, not just hiding in cash.",
-      "<strong>Positioning data suggests room for upside surprise:</strong> Institutional net equity exposure is in the 25th percentile — extremely underweight. Historically, when positioning is this light and the economy avoids recession, the subsequent 12-month equity return averages +18%.",
-      "<strong>The contrarian signal is building:</strong> When advisors are this cautious and positioning is this light, markets have historically surprised to the upside. We're not calling the bottom, but the setup is constructive for patient investors."
+      "<strong>Client sentiment has shifted decisively to cautious:</strong> Our latest advisor poll shows 62% positioning defensively — the highest reading since Q4 2022. Cash allocations have risen to ~8% of portfolios, well above the 5% long-run average. Advisors are asking harder questions about downside protection, correlation risk, and portfolio resilience than at any point in this cycle.",
+      "<strong>International equity interest is surging — especially EM:</strong> Advisor inquiries about international equity allocation have doubled over the past two quarters. The combination of extreme US concentration risk, attractive EM valuations, and the Asia AI supply chain narrative is resonating. Clients are recognizing that a 5% EM weight in a world where EM is 12% of global market cap leaves meaningful upside on the table.",
+      "<strong>Liquid alternatives are gaining traction as portfolio diversifiers:</strong> With stocks, bonds, and gold all posting losses at various points this year, advisors are actively seeking uncorrelated return streams. Fund flows into liquid alt strategies — managed futures, global macro, and market-neutral — are at multi-year highs. Clients who added alternatives heading into this volatility have seen meaningfully better portfolio outcomes, and that's driving broader adoption.",
+      "<strong>The message is clear — diversify beyond US large cap:</strong> Clients are telling us they want broader geographic exposure and true portfolio diversification, not just more of the same. The shift from concentrated US equity portfolios toward a more balanced mix of international equities and liquid alternatives is the most significant positioning trend we're seeing — and we think it has further to run."
     ],
-    tickers: ["BLCR", "DYNF"],
+    tickers: ["IEMG", "IALT"],
     placeholderChart: {
       type: "bar",
       title: "Advisor Sentiment & Institutional Positioning",
